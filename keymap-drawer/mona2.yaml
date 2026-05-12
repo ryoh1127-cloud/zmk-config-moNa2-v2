@@ -287,8 +287,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bt_Mac'
+  - '&bt_windows'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&sys_reset'
