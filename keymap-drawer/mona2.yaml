@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - {t: P, h: SCROLL}
-  - {t: '&kp_exit_AML A', h: Gui+LCTRL}
+  - {t: '&kp_exit_AML A', h: LEFT GUI}
   - S
   - D
   - F
@@ -34,16 +34,16 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - LCTRL
+  - ESC
   - LEFT WIN
   - LEFT ALT
-  - {t: LANG2, h: '5'}
+  - {t: LANG2, h: LEFT GUI}
   - {t: SPACE, h: '2'}
   - {t: '&to_layer_0 LANG1', h: '3'}
   - BACKSPACE
   - {t: ENTER, h: '1'}
   - {t: ESCAPE, h: '4'}
-  '10':
+  default_layer_Windows:
   - Q
   - W
   - E
