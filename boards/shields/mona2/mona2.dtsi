@@ -114,4 +114,17 @@
         triggers-per-rotation = <10>;
     };
 
+
+    layer_colors {
+        compatible = "zmk,layer-colors";
+
+        default {
+            color = <0x00FF00>;
+        };
+
+        layer_1 {
+            color = <0x000000>; // 消すなら黒
+        };
+    };
+
 };
