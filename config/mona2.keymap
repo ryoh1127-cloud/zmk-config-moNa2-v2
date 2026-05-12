@@ -170,6 +170,14 @@
             flavor = "balanced";
             quick-tap-ms = <200>;
         };
+
+        eisu_kana: eisu_kana {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EISU_KANA";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LANGUAGE_1>, <&lt 5 LANGUAGE_2>;
+        };
     };
 
     keymap {
@@ -177,10 +185,10 @@
 
         default_layer {
             bindings = <
-&kp Q                             &kp W         &kp E         &kp R               &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &kp F               &kp G                                  &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 7 TAB                 &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &lt_to_layer_0 5 LANG1    &kp BACKSPACE      &lt 2 ENTER                             &lt 6 ESCAPE
+&kp Q                             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &kp O    &lt 8 P
+&mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &kp F               &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 7 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
