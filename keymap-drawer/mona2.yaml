@@ -11,6 +11,49 @@ layers:
   - I
   - O
   - {t: P, h: SCROLL}
+  - {t: '&kp_exit_AML A', h: Gui+LCTRL}
+  - S
+  - D
+  - F
+  - G
+  - ;
+  - H
+  - J
+  - K
+  - L
+  - {t: '-', h: SCROLL}
+  - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
+  - X
+  - C
+  - V
+  - B
+  - {t: TAB, h: '5'}
+  - '"'
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: RIGHT SHIFT}
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - {t: LANG2, h: '5'}
+  - {t: SPACE, h: '2'}
+  - {t: '&to_layer_0 LANG1', h: '3'}
+  - BACKSPACE
+  - {t: ENTER, h: '1'}
+  - {t: ESCAPE, h: '4'}
+  '10':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - {t: P, h: SCROLL}
   - {t: '&kp_exit_AML A', h: LCTRL}
   - S
   - D
@@ -43,6 +86,49 @@ layers:
   - BACKSPACE
   - {t: ENTER, h: '1'}
   - {t: ESCAPE, h: '4'}
+  '3':
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - PG UP
+  - Gui+LEFT ARROW
+  - UP ARROW
+  - Gui+RIGHT ARROW
+  - PAGE DOWN
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT ARROW
+  - END
+  - Ctl+Gui+PRINTSCREEN
+  - TAB
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - LEFT GUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+PRINTSCREEN
+  - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
+  - Gui+W
+  - Ctl+TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   '1':
   - {t: ▽, type: trans}
   - '&'
@@ -129,55 +215,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '3':
-  - PAGE UP
-  - {t: ▽, type: trans}
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+UP ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT ARROW
-  - END
-  - Ctl+Gui+PRINTSCREEN
-  - {t: ▽, type: trans}
-  - Gui+LEFT ARROW
-  - Gui+DOWN ARROW
-  - Gui+RIGHT ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+PRINTSCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - DEL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   '4':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -205,9 +248,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - '&sys_reset'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -437,3 +480,9 @@ combos:
   k: {t: LEFT WIN, h: Gesture_L9}
 - p: [17, 29, 18, 19, 31, 10, 21]
   k: ''
+- p: [11, 12]
+  k: TAB
+- p: [2, 1]
+  k: ESC
+- p: [22, 23]
+  k: F10
