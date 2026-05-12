@@ -39,7 +39,7 @@ layers:
   - LEFT ALT
   - {t: LANG2, h: LEFT GUI}
   - {t: SPACE, h: '1'}
-  - {t: '&to_layer_0 LANG1', h: '2'}
+  - '&eisu_kana'
   - BACKSPACE
   - {t: ENTER, h: '3'}
   - {t: ESCAPE, h: '4'}
