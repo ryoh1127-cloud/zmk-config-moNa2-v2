@@ -71,16 +71,16 @@ layers:
   - V
   - B
   - {t: TAB, h: '5'}
-  - '"'
+  - '@'
   - N
   - M
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - LCTRL
+  - ESC
   - LEFT WIN
   - LEFT ALT
-  - {t: LANG2, h: '5'}
+  - {t: LANG2, h: LEFT CONTROL}
   - {t: SPACE, h: '2'}
   - {t: '&to_layer_0 LANG1', h: '3'}
   - BACKSPACE
