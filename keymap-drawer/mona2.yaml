@@ -172,40 +172,83 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  '2':
+  '11':
+  - PAGE UP
   - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - PG UP
+  - HOME
+  - UP ARROW
+  - Gui+END
+  - PAGE DOWN
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT ARROW
+  - END
+  - Ctl+Gui+PRINTSCREEN
+  - TAB
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+PRINTSCREEN
+  - Alt+F4
+  - Ctl+Sft+TAB
+  - Ctl+W
+  - Ctl+TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '2':
+  - F9
+  - F10
+  - F11
+  - F12
+  - +
+  - +
   - '7'
   - '8'
   - '9'
-  - +
-  - {t: ▽, type: trans}
+  - F12
+  - F5
+  - F6
   - F7
   - F8
-  - F9
-  - F12
-  - {t: ▽, type: trans}
+  - '-'
+  - '&mul_mark'
+  - '-'
   - '4'
   - '5'
   - '6'
-  - '-'
-  - '&mul_mark'
-  - {t: ▽, type: trans}
-  - F4
-  - F5
-  - F6
   - F11
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - '='
-  - KP MULTIPLY
-  - '&div_mark'
-  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
-  - F10
+  - F4
+  - '='
+  - KP MULTIPLY
+  - '&div_mark'
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
