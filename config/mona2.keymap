@@ -28,18 +28,33 @@
         compatible = "zmk,combos";
 
         Gesture_L8 {
-            bindings = <&lt 8 LA(TAB)>;
+            bindings = <&lt 9 LA(TAB)>;
             key-positions = <8 9>;
         };
 
         Gesture_L9 {
-            bindings = <&lt 9 LEFT_WIN>;
+            bindings = <&lt 10 LEFT_WIN>;
             key-positions = <19 20>;
         };
 
         a {
             bindings = <&none>;
             key-positions = <17 29 18 19 31 10 21>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <2 1>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <22 23>;
         };
     };
 
@@ -85,7 +100,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off MOUSE>;
+            bindings = <&tog_off 6>;
             label = "exit_AML";
         };
 
@@ -146,13 +161,35 @@
 
         default_layer {
             bindings = <
-&kp Q                             &kp W         &kp E         &kp R        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &lt 6 P
-&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &kp F        &kp G                                  &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 6 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 5 TAB                 &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1    &kp BACKSPACE      &lt 1 ENTER                             &lt 4 ESCAPE
+&kp Q                             &kp W         &kp E         &kp R        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &lt 7 P
+&mt_exit_AML_on_tap LG(LCTRL) A   &kp S         &kp D         &kp F        &kp G                                  &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 7 MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 6 TAB                 &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 4 SPACE  &lt_to_layer_0 2 LANG1    &kp BACKSPACE      &lt 3 ENTER                             &lt 5 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_10 {
+            bindings = <
+&kp Q                             &kp W         &kp E         &kp R        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &lt 7 P
+&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &kp F        &kp G                                  &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 7 MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 6 TAB                 &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 4 SPACE  &lt_to_layer_0 2 LANG1    &kp BACKSPACE      &lt 3 ENTER                             &lt 5 ESCAPE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_3 {
+            bindings = <
+&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp PAGE_DOWN                                     &kp PG_UP  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp PAGE_DOWN
+&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &kp TAB    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LEFT_GUI
+&trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &trans     &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
+&trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                              &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
         };
 
         layer_1 {
@@ -177,23 +214,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
-            bindings = <
-&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp PAGE_DOWN                                     &trans  &trans              &kp LG(UP_ARROW)    &trans               &trans
-&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans
-&trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &trans  &trans              &trans              &trans               &trans
-&trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                               &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
-        };
-
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &bt BT_CLR_ALL                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans                    &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans          &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans          &trans    &trans       &trans                                                  &trans
+&trans  &trans          &trans  &trans  &bt BT_CLR                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans          &trans  &trans  &trans                &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans          &trans  &trans  &trans      &trans    &bootloader  &trans        &trans        &trans        &trans        &sys_reset
+&trans  &bt BT_CLR_ALL  &trans  &trans  &trans      &trans    &trans       &trans                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
