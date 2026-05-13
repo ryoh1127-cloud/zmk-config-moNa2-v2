@@ -86,6 +86,7 @@
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
     };
+};
 
 layer_colors {
     compatible = "zmk,layer-colors";
@@ -97,5 +98,4 @@ layer_colors {
     layer_1 {
         color = <0x000000>; // Layer1 青
     };
-　　};
 };
