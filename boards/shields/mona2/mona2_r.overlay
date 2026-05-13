@@ -97,4 +97,5 @@ layer_colors {
     layer_1 {
         color = <0x000000>; // Layer1 青
     };
+　　};
 };
