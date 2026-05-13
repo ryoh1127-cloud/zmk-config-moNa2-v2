@@ -100,7 +100,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off 7>;
+            bindings = <&tog_off 8>;
             label = "exit_AML";
         };
 
@@ -124,7 +124,7 @@
         bt_windows: bt_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&bt BT_SEL 1>, <&macro_press>, <&to 1>;
+            bindings = <&macro_press>, <&bt BT_SEL 1>, <&macro_press>, <&to 4>;
 
             label = "BT_WINDOWS";
         };
@@ -176,7 +176,7 @@
             label = "EISU_KANA";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&lt 5 LANGUAGE_1>, <&kp LANGUAGE_1>;
+            bindings = <&lt 3 LANGUAGE_1>, <&kp LANGUAGE_2>;
         };
     };
 
@@ -187,19 +187,8 @@
             bindings = <
 &kp Q                             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &kp O    &lt 8 P
 &mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &kp F               &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 7 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 6 ESCAPE
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        default_layer_Windows {
-            bindings = <
-&kp Q                             &kp W         &kp E         &kp R                   &kp T                                                 &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &kp F                   &kp G                                  &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 7 TAB                 &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 4 SPACE  &lt_to_layer_0 5 LANG1    &kp BACKSPACE  &lt 3 ENTER                             &lt 6 ESCAPE
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 2 SPACE  &eisu_kana    &kp BACKSPACE      &lt 1 ENTER                             &lt 8 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -211,17 +200,6 @@
 &kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &kp TAB    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LEFT_GUI
 &trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &trans     &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
 &trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                              &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
-        };
-
-        layer_11 {
-            bindings = <
-&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp PAGE_DOWN                                     &kp PG_UP   &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_DOWN
-&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &kp TAB     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_ALT
-&trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &kp LA(F4)  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &trans
-&trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -258,6 +236,28 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        default_layer_Windows {
+            bindings = <
+&kp Q                             &kp W         &kp E         &kp R                   &kp T                               &kp Y        &kp U  &kp I      &kp O    &lt 8 P
+&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &kp F                   &kp G                &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B   &lt 8 TAB    &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &trans  &trans       &kp BACKSPACE  &lt 7 ENTER                             &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_11 {
+            bindings = <
+&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp PAGE_DOWN                                     &kp PG_UP   &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_DOWN
+&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &kp TAB     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_ALT
+&trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &kp LA(F4)  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &trans
+&trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                        &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
         };
 
         MOUSE {
