@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - B
-  - {t: TAB, h: SCROLL}
+  - {t: TAB, h: '5'}
   - '"'
   - N
   - M
@@ -43,6 +43,49 @@ layers:
   - BACKSPACE
   - {t: ENTER, h: '3'}
   - {t: ESCAPE, h: '4'}
+  default_layer_Windows:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - {t: P, h: SCROLL}
+  - {t: '&kp_exit_AML A', h: LCTRL}
+  - S
+  - D
+  - F
+  - A
+  - ;
+  - H
+  - J
+  - K
+  - L
+  - {t: '-', h: SCROLL}
+  - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
+  - X
+  - C
+  - V
+  - B
+  - {t: TAB, h: '5'}
+  - '@'
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: RIGHT SHIFT}
+  - ESC
+  - LEFT WIN
+  - LEFT ALT
+  - {t: LANG2, h: LEFT CONTROL}
+  - {t: SPACE, h: '1'}
+  - '&eisu_kana'
+  - BACKSPACE
+  - {t: ENTER, h: '11'}
+  - {t: ESC, h: '4'}
   '3':
   - PAGE UP
   - {t: ▽, type: trans}
@@ -75,6 +118,49 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Gui+W
+  - Ctl+TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DEL
+  - {type: held}
+  - {t: ▽, type: trans}
+  '11':
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - PG UP
+  - HOME
+  - UP ARROW
+  - END
+  - PAGE DOWN
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT ARROW
+  - END
+  - Ctl+Gui+PRINTSCREEN
+  - TAB
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - {t: ▽, type: trans}
+  - Sft+PRINTSCREEN
+  - Alt+F4
+  - Ctl+Sft+TAB
+  - Ctl+W
   - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,92 +301,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  default_layer_Windows:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - {t: P, h: SCROLL}
-  - {t: '&kp_exit_AML A', h: LCTRL}
-  - S
-  - D
-  - F
-  - A
-  - ;
-  - H
-  - J
-  - K
-  - L
-  - {t: '-', h: SCROLL}
-  - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
-  - X
-  - C
-  - V
-  - B
-  - {t: TAB, h: SCROLL}
-  - '@'
-  - N
-  - M
-  - ','
-  - .
-  - {t: /, h: RIGHT SHIFT}
-  - ESC
-  - LEFT WIN
-  - LEFT ALT
-  - {t: LANG2, h: LEFT CONTROL}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - {t: ENTER, h: '11'}
-  - {t: ▽, type: trans}
-  '11':
-  - PAGE UP
-  - {t: ▽, type: trans}
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - PAGE DOWN
-  - PG UP
-  - HOME
-  - UP ARROW
-  - END
-  - PAGE DOWN
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT ARROW
-  - END
-  - Ctl+Gui+PRINTSCREEN
-  - TAB
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - LEFT ALT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - {t: ▽, type: trans}
-  - Sft+PRINTSCREEN
-  - Alt+F4
-  - Ctl+Sft+TAB
-  - Ctl+W
-  - Ctl+TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DEL
-  - {type: held}
-  - {t: ▽, type: trans}
   '5':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -328,7 +328,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
