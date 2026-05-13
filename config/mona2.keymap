@@ -243,7 +243,7 @@
 &kp Q                             &kp W         &kp E         &kp R                   &kp T                               &kp Y        &kp U  &kp I      &kp O    &lt 8 P
 &mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &kp F                   &kp A                &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
 &mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B   &lt 8 TAB    &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &trans  &trans       &kp BACKSPACE  &lt 7 ENTER                             &trans
+&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &trans  &trans       &kp BACKSPACE  &lt 6 ENTER                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -253,7 +253,7 @@
             bindings = <
 &kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp PAGE_DOWN                                     &kp PG_UP   &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_DOWN
 &kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &kp TAB     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_ALT
-&trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &kp LA(F4)  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &trans
+&trans       &trans    &trans        &trans           &kp A          &trans    &kp LS(PRINTSCREEN)      &kp LA(F4)  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &trans
 &trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                        &trans
             >;
 
