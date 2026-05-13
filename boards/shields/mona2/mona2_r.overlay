@@ -88,14 +88,3 @@
     };
 };
 
-layer_colors {
-    compatible = "zmk,layer-colors";
-
-    default {
-        color = <0x000000>; // Layer0 緑
-    };
-
-    layer_1 {
-        color = <0x000000>; // Layer1 青
-    };
-};
