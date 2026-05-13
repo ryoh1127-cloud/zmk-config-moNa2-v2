@@ -42,7 +42,7 @@ layers:
   - '&eisu_kana'
   - BACKSPACE
   - {t: ENTER, h: '3'}
-  - {t: ESCAPE, h: SCROLL}
+  - {t: ESCAPE, h: '4'}
   '3':
   - PAGE UP
   - {t: ▽, type: trans}
@@ -214,7 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   default_layer_Windows:
   - Q
   - W
@@ -230,7 +230,7 @@ layers:
   - S
   - D
   - F
-  - G
+  - A
   - ;
   - H
   - J
