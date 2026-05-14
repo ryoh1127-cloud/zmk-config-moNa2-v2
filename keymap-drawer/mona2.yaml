@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - DEL
   - {type: held}
-  - {t: ▽, type: trans}
+  - Gui+Sft+4
   '3':
   - PAGE UP
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - DEL
   - {type: held}
-  - Gui+Sft+3
+  - Gui+Sft+S
   '4':
   - ''''
   - '"'
