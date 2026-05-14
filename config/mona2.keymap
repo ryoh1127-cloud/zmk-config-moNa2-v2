@@ -271,7 +271,7 @@
 
         layer_4 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none     &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none          &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
 &kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                   &none   &kp SEMICOLON  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
 &kp LSHIFT        &kp GRAVE          &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON      &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
@@ -282,7 +282,7 @@
 
         layer_12 {
             bindings = <
-&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none        &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
+&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none             &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
 &kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none   &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LS(0x89)
 &kp LSHIFT        &kp LEFT_BRACE  &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
 &trans            &trans          &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
@@ -305,7 +305,7 @@
         layer_6 {
             bindings = <
 &trans  &trans          &trans  &trans  &bt BT_CLR                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans          &trans  &trans  &trans                &trans       &bt_Mac       &bt_Mac       &trans        &trans        &trans
+&trans  &trans          &trans  &trans  &trans                &trans       &bt_Mac       &bt_windows   &trans        &trans        &trans
 &trans  &trans          &trans  &trans  &trans      &trans    &bootloader  &to 0         &to 1         &trans        &trans        &sys_reset
 &trans  &bt BT_CLR_ALL  &trans  &trans  &trans      &trans    &trans       &trans                                                  &trans
             >;
