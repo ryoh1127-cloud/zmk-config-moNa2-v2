@@ -54,12 +54,12 @@
         compatible = "zmk,combos";
 
         Gesture_L8 {
-            bindings = <&lt 10 LA(TAB)>;
+            bindings = <&lt 11 LA(TAB)>;
             key-positions = <8 9>;
         };
 
         Gesture_L9 {
-            bindings = <&lt 11 LEFT_WIN>;
+            bindings = <&lt 12 LEFT_WIN>;
             key-positions = <19 20>;
         };
 
@@ -126,7 +126,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off 8>;
+            bindings = <&tog_off 9>;
             label = "exit_AML";
         };
 
@@ -202,7 +202,7 @@
             label = "EISU_KANA";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&lt 5 LANGUAGE_1>, <&kp LANGUAGE_2>;
+            bindings = <&lt 6 LANGUAGE_1>, <&kp LANGUAGE_2>;
         };
 
         copy_paste_Mac: copy_paste_Mac {
@@ -227,10 +227,10 @@
 
         default_layer {
             bindings = <
-&kp Q                             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &kp F               &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 7 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 6 ESCAPE
+&kp Q                             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &kp O    &lt 9 P
+&mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &kp F               &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 7 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -238,10 +238,10 @@
 
         default_layer_Win {
             bindings = <
-&kp Q                             &kp W         &kp E      &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D      &kp F                   &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 8 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C      &kp V                   &kp B        &lt 7 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&mt LEFT_ALT ESC                  &kp LEFT_WIN  &kp LCTRL  &mt LEFT_CONTROL LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                             &lt 6 ESC
+&kp Q                             &kp W         &kp E      &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &kp O    &lt 9 P
+&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D      &kp F                   &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C      &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&mt LEFT_ALT ESC                  &kp LEFT_WIN  &kp LCTRL  &mt LEFT_CONTROL LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                             &lt 7 ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -271,10 +271,21 @@
 
         layer_4 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp JP_YEN     &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
-&kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                           &kp SEMICOLON  &kp PLUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp LEFT_SHIFT    &kp GRAVE          &none            &kp SLASH      &kp BACKSLASH                 &trans    &kp COLON      &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
-&trans           &trans         &trans       &trans                &kp TAB                 &trans    &trans  &trans                                                              &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp JP_YEN     &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                   &none   &kp SEMICOLON  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp LSHIFT        &kp GRAVE          &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON      &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
+&trans            &trans             &trans           &trans         &kp TAB           &trans    &trans
+            >;
+
+            sensor-bindings = <&scroll_right_left>;
+        };
+
+        layer_12 {
+            bindings = <
+&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp JP_YEN        &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
+&kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none   &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp PIPE
+&kp LSHIFT        &kp LEFT_BRACE  &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
+&trans            &trans          &trans           &trans         &kp TAB           &trans    &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
