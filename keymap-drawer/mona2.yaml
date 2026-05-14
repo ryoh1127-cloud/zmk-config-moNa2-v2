@@ -319,7 +319,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bt_Mac'
-  - '&bt_Mac'
+  - '&bt_windows'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
