@@ -38,12 +38,12 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT GUI}
-  - {t: SPACE, h: '1'}
+  - {t: SPACE, h: '4'}
   - '&eisu_kana'
   - BACKSPACE
-  - {t: ENTER, h: '3'}
-  - {t: ESCAPE, h: '4'}
-  default_layer_Windows:
+  - {t: ENTER, h: '2'}
+  - {t: ESCAPE, h: '6'}
+  default_layer_Win:
   - Q
   - W
   - E
@@ -77,16 +77,16 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - ESC
+  - {t: ESC, h: LEFT ALT}
   - LEFT WIN
-  - LEFT ALT
+  - LCTRL
   - {t: LANG2, h: LEFT CONTROL}
-  - {t: SPACE, h: '1'}
+  - {t: SPACE, h: '4'}
   - '&eisu_kana'
   - BACKSPACE
-  - {t: ENTER, h: '11'}
-  - {t: ESC, h: '4'}
-  '3':
+  - {t: ENTER, h: '3'}
+  - {t: ESC, h: '6'}
+  '2':
   - PAGE UP
   - {t: ▽, type: trans}
   - UP ARROW
@@ -115,7 +115,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+PRINTSCREEN
-  - {t: ▽, type: trans}
+  - '&copy_paste_Mac'
   - Ctl+Sft+TAB
   - Gui+W
   - Ctl+TAB
@@ -129,7 +129,7 @@ layers:
   - DEL
   - {type: held}
   - {t: ▽, type: trans}
-  '11':
+  '3':
   - PAGE UP
   - {t: ▽, type: trans}
   - UP ARROW
@@ -158,11 +158,11 @@ layers:
   - A
   - {t: ▽, type: trans}
   - Sft+PRINTSCREEN
-  - Alt+F4
+  - '&copy_paste_Win'
   - Ctl+Sft+TAB
   - Ctl+W
   - Ctl+TAB
-  - {t: ▽, type: trans}
+  - Alt+F4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,8 +171,8 @@ layers:
   - {t: ▽, type: trans}
   - DEL
   - {type: held}
-  - {t: ▽, type: trans}
-  '1':
+  - Gui+Sft+3
+  '4':
   - {t: ▽, type: trans}
   - '&'
   - '*'
@@ -215,92 +215,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
-  - F9
-  - F10
-  - F11
-  - F12
-  - +
-  - +
-  - '7'
-  - '8'
-  - '9'
-  - {t: ▽, type: trans}
-  - F5
-  - F6
-  - F7
-  - F8
-  - '-'
-  - '&mul_mark'
-  - '-'
-  - '4'
-  - '5'
-  - '6'
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - '='
-  - KP MULTIPLY
-  - '&div_mark'
-  - '='
-  - '1'
-  - '2'
-  - '3'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '4':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&bootloader'
-  - '&bt_Mac'
-  - '&bt_windows'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&sys_reset'
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   '5':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -344,6 +258,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  '6':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bt_Mac'
+  - '&bt_Mac'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - {t: default, h: toggle}
+  - {t: default_layer_Win, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
