@@ -81,7 +81,7 @@ layers:
   - LEFT WIN
   - LCTRL
   - {t: LANG2, h: LEFT CONTROL}
-  - {t: SPACE, h: '4'}
+  - {t: SPACE, h: '12'}
   - '&eisu_kana'
   - BACKSPACE
   - {t: ENTER, h: '3'}
@@ -173,45 +173,88 @@ layers:
   - {type: held}
   - Gui+Sft+3
   '4':
-  - {t: ▽, type: trans}
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
+  - ''''
+  - '"'
+  - '!'
+  - <
+  - '>'
+  - '0x89'
+  - ''
   - '['
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - $
   - '%'
-  - ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - (
-  - )
-  - \
-  - {t: ▽, type: trans}
-  - {t: '~', h: LSHFT}
-  - '!'
   - '@'
   - '#'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $
+  - ^
+  - '~'
+  - ''
+  - ;
+  - +
+  - (
+  - )
+  - '|'
+  - LSHIFT
+  - '`'
+  - ''
+  - /
+  - \
+  - ''
+  - ''
+  - ':'
+  - '&'
   - '{'
   - '}'
-  - '|'
-  - {t: ▽, type: trans}
+  - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - TAB
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '12':
+  - '&'
+  - '@'
+  - '!'
+  - <
+  - '>'
+  - '0x89'
+  - ''
+  - ']'
+  - \
+  - '%'
+  - '['
+  - '#'
+  - $
+  - '='
+  - +
+  - ''
+  - ;
+  - ':'
+  - '*'
+  - (
+  - Sft+0x89
+  - LSHIFT
+  - '{'
+  - ''
+  - /
+  - \
+  - ''
+  - ''
+  - ''''
+  - ^
+  - '}'
+  - '|'
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
