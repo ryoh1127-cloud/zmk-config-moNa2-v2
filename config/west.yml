@@ -12,8 +12,6 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
     - name: oleksandrmaslov
       url-base: https://github.com/oleksandrmaslov 
   projects:
@@ -36,9 +34,5 @@ manifest:
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
       revision: main
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
   self:
     path: config
