@@ -1,7 +1,22 @@
 #include "mona2.dtsi"
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 
+
+// =========================================================================
+// ★追加：加速度（アクセラレーション）のカーブ設定
+// =========================================================================
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;  // For relative input devices
+    track-remainders;             // Accumulate fractional movements
+    min-factor = <800>;          // 0.8x at very slow speeds
+    max-factor = <3000>;         // 3.0x at fast speeds
+    speed-threshold = <1200>;     // 1200 counts/sec for 1x
+    speed-max = <6000>;          // 6000 counts/sec for max accel
+    acceleration-exponent = <2>;  // Quadratic acceleration curve
+};
 
 &default_transform {
     col-offset = <6>;
@@ -75,12 +90,18 @@
     status = "okay";
     device = <&trackball_central>;
 
-    input-processors = <&zip_temp_layer 8 10000>; 
+// ★変更：入力チェーンの先頭に &pointer_accel を追加
+    input-processors = <
+        &pointer_accel
+        &zip_temp_layer 8 10000>;
+
+    //input-processors = <&zip_temp_layer 8 10000>; //無効
 
 // ★追加：レイヤー2のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
         input-processors = 
+            <&pointer_accel>,          // （&pointer_accel を先頭に追加）
             <&zip_temp_layer 8 10000>, // オートマウスの設定を引き継ぐ
             <&zip_xy_scaler 1 3>;       // カーソル移動量を1/3倍（3倍遅く）にする
     };
