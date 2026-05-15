@@ -77,6 +77,14 @@
 
     input-processors = <&zip_temp_layer 8 10000>; 
 
+// ★追加：レイヤー2のときだけカーソルを遅くする設定
+    snipe_mode {
+        layers = <4>;
+        input-processors = 
+            <&zip_temp_layer 8 10000>, // オートマウスの設定を引き継ぐ
+            <&zip_xy_scaler 1 3>;       // カーソル移動量を1/3倍（3倍遅く）にする
+    };
+
     scroller {
         layers = <9>;
         input-processors = 
