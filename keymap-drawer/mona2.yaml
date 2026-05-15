@@ -42,7 +42,7 @@ layers:
   - '&eisu_kana'
   - BACKSPACE
   - {t: ENTER, h: '2'}
-  - {t: ESCAPE, h: '6'}
+  - {t: ESCAPE, h: '7'}
   default_layer_Win:
   - Q
   - W
@@ -77,15 +77,15 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - {t: ESC, h: LEFT ALT}
+  - {t: ESC, h: LCTRL}
   - LEFT WIN
-  - LCTRL
+  - LEFT ALT
   - {t: LANG2, h: LEFT CONTROL}
-  - {t: SPACE, h: '12'}
+  - {t: SPACE, h: '5'}
   - '&eisu_kana'
   - BACKSPACE
   - {t: ENTER, h: '3'}
-  - {t: ESC, h: '6'}
+  - {t: ESC, h: '7'}
   '2':
   - PAGE UP
   - {t: ▽, type: trans}
@@ -215,49 +215,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '12':
-  - '&'
-  - '@'
-  - '!'
-  - <
-  - '>'
-  - ''
-  - ''
-  - ']'
-  - \
-  - '%'
-  - '['
-  - '#'
-  - $
-  - '='
-  - +
-  - ''
-  - ;
-  - ':'
-  - '*'
-  - (
-  - Sft+0x89
-  - LSHIFT
-  - '{'
-  - ''
-  - /
-  - \
-  - ''
-  - ''
-  - ''''
-  - ^
-  - '}'
-  - '|'
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: TAB, type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   '5':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -296,12 +253,55 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '6':
+  - F9
+  - F10
+  - F11
+  - F12
+  - +
+  - +
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - F5
+  - F6
+  - F7
+  - F8
+  - '-'
+  - '&mul_mark'
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - '='
+  - KP MULTIPLY
+  - '&div_mark'
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '7':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
