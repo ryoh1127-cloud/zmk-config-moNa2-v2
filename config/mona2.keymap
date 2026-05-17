@@ -254,10 +254,10 @@
 
         layer_2 {
             bindings = <
-&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp PAGE_DOWN                                     &kp PG_UP           &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN
-&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp END                  &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)
-&trans       &trans    &trans        &trans           &trans         &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))  &kp LG(W)       &kp LC(TAB)      &trans
-&trans       &trans    &trans        &trans           &trans         &trans    &kp DEL                  &trans                                                                &kp LG(LS(NUMBER_4))
+&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp PG_UP           &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN
+&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)
+&trans       &trans    &trans        &trans           &trans                                  &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))  &kp LG(W)       &kp LC(TAB)      &trans
+&trans       &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                                &kp LG(LS(NUMBER_4))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
