@@ -93,9 +93,9 @@ layers:
   - {t: ▽, type: trans}
   - PAGE DOWN
   - PG UP
-  - Gui+LEFT ARROW
+  - Ctl+Sft+TAB
   - UP ARROW
-  - Gui+RIGHT ARROW
+  - Ctl+TAB
   - PAGE DOWN
   - HOME
   - LEFT
@@ -103,11 +103,11 @@ layers:
   - RIGHT ARROW
   - END
   - Ctl+Gui+PRINTSCREEN
-  - TAB
+  - Gui+LEFT ARROW
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - LEFT GUI
+  - Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -136,9 +136,9 @@ layers:
   - {t: ▽, type: trans}
   - PAGE DOWN
   - PG UP
-  - HOME
+  - Ctl+Sft+TAB
   - UP ARROW
-  - END
+  - Ctl+TAB
   - PAGE DOWN
   - HOME
   - LEFT
@@ -146,11 +146,11 @@ layers:
   - RIGHT ARROW
   - END
   - Ctl+Gui+PRINTSCREEN
-  - TAB
+  - HOME
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - LEFT ALT
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
