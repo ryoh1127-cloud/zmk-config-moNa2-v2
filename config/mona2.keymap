@@ -225,6 +225,13 @@
             tapping-term-ms = <250>;
             bindings = <&mt LC(X) LC(C)>, <&kp LC(V)>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -282,7 +289,7 @@
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&new_behavior C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_5 {
