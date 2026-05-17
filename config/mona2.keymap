@@ -289,7 +289,7 @@
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
-            sensor-bindings = <&new_behavior C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&new_behavior C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_5 {
