@@ -14,7 +14,7 @@ layers:
   - {t: '&kp_exit_AML A', h: LEFT GUI}
   - S
   - D
-  - F
+  - {t: F, h: '2'}
   - G
   - ;
   - H
@@ -57,7 +57,7 @@ layers:
   - {t: '&kp_exit_AML A', h: LCTRL}
   - S
   - D
-  - F
+  - {t: F, h: '3'}
   - G
   - ;
   - H
@@ -100,7 +100,7 @@ layers:
   - HOME
   - LEFT
   - DOWN
-  - RIGHT ARROW
+  - {t: RIGHT ARROW, type: held}
   - END
   - Ctl+Gui+PRINTSCREEN
   - Gui+LEFT ARROW
@@ -127,7 +127,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
-  - {type: held}
+  - {t: ▽, type: trans}
   - Gui+Sft+4
   '3':
   - PAGE UP
@@ -143,7 +143,7 @@ layers:
   - HOME
   - LEFT
   - DOWN
-  - RIGHT ARROW
+  - {t: RIGHT ARROW, type: held}
   - AC DESKTOP SHOW ALL APPLICATIONS
   - Ctl+Gui+PRINTSCREEN
   - HOME
@@ -170,7 +170,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
-  - {type: held}
+  - {t: ▽, type: trans}
   - Gui+Sft+S
   '4':
   - ''''
