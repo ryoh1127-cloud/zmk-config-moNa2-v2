@@ -115,5 +115,15 @@
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
     };
+// ★追加：レイヤー10のときにY軸反転スクロール
+    scroller {
+        layers = <10>;
+        input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_scroll_scaler 1 16>;
+    };
 };
 
