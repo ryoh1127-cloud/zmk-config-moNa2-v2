@@ -11,11 +11,11 @@
 &pointer_accel {
     input-type = <INPUT_EV_REL>;  // For relative input devices
     track-remainders;             // Accumulate fractional movements
-    min-factor = <800>;          // 0.8x at very slow speeds
-    max-factor = <3000>;         // 3.0x at fast speeds
-    speed-threshold = <1200>;     // 1200 counts/sec for 1x
-    speed-max = <6000>;          // 6000 counts/sec for max accel
-    acceleration-exponent = <2>;  // Quadratic acceleration curve
+    min-factor = <1000>;          // 0.8x at very slow speeds
+    max-factor = <2000>;         // 3.0x at fast speeds
+    speed-threshold = <1000>;     // 1200 counts/sec for 1x
+    speed-max = <5000>;          // 6000 counts/sec for max accel
+    acceleration-exponent = <1>;  // Quadratic acceleration curve
 };
 
 &default_transform {
