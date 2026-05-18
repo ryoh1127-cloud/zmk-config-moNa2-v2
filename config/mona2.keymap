@@ -54,12 +54,12 @@
         compatible = "zmk,combos";
 
         Gesture_L8 {
-            bindings = <&lt 11 LA(TAB)>;
+            bindings = <&lt 12 LA(TAB)>;
             key-positions = <8 9>;
         };
 
         Gesture_L9 {
-            bindings = <&lt 12 LEFT_WIN>;
+            bindings = <&lt 13 LEFT_WIN>;
             key-positions = <19 20>;
         };
 
@@ -250,8 +250,8 @@
 
         default_layer_Win {
             bindings = <
-&kp Q                             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &kp O    &lt 9 P
-&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
+&kp Q                             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &kp O    &lt 10 P
+&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &lt 10 MINUS
 &mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &mt LCTRL ESC                     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                             &lt 7 ESC
             >;
@@ -337,6 +337,17 @@
         };
 
         SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_13 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
