@@ -116,7 +116,7 @@
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
     };
 // ★追加：レイヤー10のときにY軸反転スクロール
-    scroller {
+    scroller_reverse {
         layers = <10>;
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
