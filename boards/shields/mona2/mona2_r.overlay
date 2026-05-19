@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
 #include <mouse-gesture.dtsi>
+#include <dt-bindings/zmk/mouse-gesture.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
