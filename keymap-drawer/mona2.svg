@@ -166,8 +166,8 @@ path.combo {
 <g transform="translate(700, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">P</text>
-<a href="#SCROLL">
-<text x="0" y="24" class="key hold layer-activator">SCROLL</text>
+<a href="#Gesture_L1">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 70%">Gesture_L1</tspan></text>
 </a></g>
 <g transform="translate(28, 84)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -324,16 +324,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -565,16 +565,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -815,16 +815,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -1061,16 +1061,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -1269,16 +1269,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -1491,16 +1491,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -1727,16 +1727,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -1956,16 +1956,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -2035,8 +2035,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(700, 28)" class="key held keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(700, 28)" class="key trans keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 84)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2078,9 +2079,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(700, 84)" class="key trans keypos-20">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(700, 84)" class="key held keypos-20">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(28, 140)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2169,16 +2169,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -2382,16 +2382,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -2422,8 +2422,8 @@ path.combo {
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 2800)" class="layer-Gesture_L7">
-<text x="0" y="28" class="label" id="Gesture_L7">Gesture_L7:</text>
+<g transform="translate(30, 2800)" class="layer-Gesture_L1">
+<text x="0" y="28" class="label" id="Gesture_L1">Gesture_L1:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2461,9 +2461,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(700, 28)" class="key trans keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(700, 28)" class="key held keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(28, 84)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2596,16 +2595,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -2636,8 +2635,8 @@ path.combo {
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 3080)" class="layer-Gesture_L8">
-<text x="0" y="28" class="label" id="Gesture_L8">Gesture_L8:</text>
+<g transform="translate(30, 3080)" class="layer-Gesture_L2">
+<text x="0" y="28" class="label" id="Gesture_L2">Gesture_L2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2808,16 +2807,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
@@ -2848,8 +2847,8 @@ path.combo {
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 3360)" class="layer-Gesture_L9">
-<text x="0" y="28" class="label" id="Gesture_L9">Gesture_L9:</text>
+<g transform="translate(30, 3360)" class="layer-Gesture_L3">
+<text x="0" y="28" class="label" id="Gesture_L3">Gesture_L3:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3020,16 +3019,16 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Alt+TAB</text>
-<a href="#Gesture_L8">
-<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L8</tspan></text>
+<a href="#Gesture_L2">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L2</tspan></text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
 <text x="672" y="84" class="combo tap">
 <tspan x="672" dy="-0.6em">LEFT</tspan><tspan x="672" dy="1.2em">WIN</tspan>
 </text>
-<a href="#Gesture_L9">
-<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L9</tspan></text>
+<a href="#Gesture_L3">
+<text x="672" y="95" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
 <g class="combo combopos-2">
 <path d="M428,108 l86,-20" class="combo"/>
