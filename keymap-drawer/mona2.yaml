@@ -265,9 +265,9 @@ layers:
   - F12
   - +
   - +
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - {t: ▽, type: trans}
   - F5
   - F6
@@ -276,9 +276,9 @@ layers:
   - '-'
   - '&mul_mark'
   - '-'
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -288,10 +288,10 @@ layers:
   - KP MULTIPLY
   - '&div_mark'
   - '='
-  - '1'
-  - '2'
-  - '3'
-  - '0'
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
