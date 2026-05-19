@@ -101,12 +101,12 @@
             input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
         };
 
-        gest_on_l2 {
+        // gest_on_l2 {
             layers = <12>;
             input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
         };
 
-        gest_on_l3 {
+        // gest_on_l3 {
             layers = <13>;
             input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
         };
@@ -140,12 +140,12 @@
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
 
-    gest_on_l2 {
+    // gest_on_l2 {
         layers = <12>;
         input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
     };
 
-    gest_on_l3 {
+    // gest_on_l3 {
         layers = <13>;
         input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
     };
