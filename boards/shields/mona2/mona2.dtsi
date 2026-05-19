@@ -2,6 +2,9 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <physical_layouts.dtsi>
+#include <zephyr/dt-bindings/pinctrl/nrf-pinctrl.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
 / {
     chosen {
@@ -94,7 +97,45 @@
             //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             //<&zip_temp_layer 5 500>;                            //オートマウスレイヤーの選択
-    };	
+    };
+
+
+        gest_on_l1 {
+            layers = <11>;
+            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        };
+
+        gest_on_l2 {
+            layers = <12>;
+            input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
+        };
+
+        gest_on_l3 {
+            layers = <13>;
+            input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
+        };
+
+    };
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        // Layer 11 に入ったらジェスチャーON、抜けたらOFF
+        gesture_on_l1 {
+            layers = <11>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        gesture_on_l2 {
+            layers = <12>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        gesture_on_l3 {
+            layers = <13>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
