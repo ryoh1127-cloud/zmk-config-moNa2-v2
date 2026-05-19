@@ -127,9 +127,7 @@
 // =========================================================================
     mouse_gesture_mode {
         layers = <11>;
-        input-processors = 
-            <&zip_mouse_gesture>;
-            <&zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
 // =========================================================================
 };
