@@ -94,22 +94,6 @@
         status = "disabled";
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;         //Y軸反転
-
-        // サブノードとしてインプットプロセッサの設定を格納
-        gest_on_l1 {
-            layers = <11>;
-            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-        };
-
-        // gest_on_l2 {
-            layers = <12>;
-            input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
-        };
-
-        // gest_on_l3 {
-            layers = <13>;
-            input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
-        };
     };
 
     left_encoder: encoder_left {
@@ -128,25 +112,5 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
-    };
-};
-
-/* =========================================================================
-   ルートノードの外側で、インプットリスナー内のジェスチャー設定を正しく上書き
-   ========================================================================= */
-&trackball_central_listener {
-    gest_on_l1 {
-        layers = <11>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-    };
-
-    // gest_on_l2 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
-    };
-
-    // gest_on_l3 {
-        layers = <13>;
-        input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
     };
 };
