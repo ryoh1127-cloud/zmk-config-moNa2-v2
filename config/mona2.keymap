@@ -397,15 +397,20 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
 
-// デフォルトのジェスチャー
-    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
+// 階層を1段深くしてジェスチャーを定義する
+    gestures {
+        compatible = "zmk,input-processor-mouse-gesture-list";
+        
+        // デフォルトのジェスチャー
+        prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+        next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+        Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+        close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 
-    // Layer 12 用のジェスチャー（直接並べる）
-    l12_up    { layers = <12>; pattern = <GESTURE_UP>;    bindings = <&kp C_VOLUME_UP>; };
-    l12_down  { layers = <12>; pattern = <GESTURE_DOWN>;  bindings = <&kp C_VOLUME_DOWN>; };
-    l12_left  { layers = <12>; pattern = <GESTURE_LEFT>;  bindings = <&kp LA(LEFT)>; };
-    l12_right { layers = <12>; pattern = <GESTURE_RIGHT>; bindings = <&kp LA(RIGHT)>; };
+        // Layer 12 用のジェスチャー
+        l12_up    { layers = <12>; pattern = <GESTURE_UP>;    bindings = <&kp C_VOLUME_UP>; };
+        l12_down  { layers = <12>; pattern = <GESTURE_DOWN>;  bindings = <&kp C_VOLUME_DOWN>; };
+        l12_left  { layers = <12>; pattern = <GESTURE_LEFT>;  bindings = <&kp LA(LEFT)>; };
+        l12_right { layers = <12>; pattern = <GESTURE_RIGHT>; bindings = <&kp LA(RIGHT)>; };
+    };
 };
