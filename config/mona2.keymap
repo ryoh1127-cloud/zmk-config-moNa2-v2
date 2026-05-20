@@ -409,11 +409,11 @@
 
     Create_tab {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LC(T)>;
+        bindings = <&kp LG(T)>;
     };
 
     close_tab {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LC(W)>;
+        bindings = <&kp LG(W)>;
     };
 };
