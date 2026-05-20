@@ -124,13 +124,9 @@
 // =========================================================================
 // レイヤー11のときにジェスチャーを有効にする
 // =========================================================================
-    mouse_gesture_mode_mac1 {
+    mouse_gesture_mode {
         layers = <11>;
-        input-processors = <&zip_mouse_gesture_mac_tab &zip_xy_scaler 0 1>;
-    };
-    mouse_gesture_mode_win1 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture_win_tab &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
 // =========================================================================
 };
