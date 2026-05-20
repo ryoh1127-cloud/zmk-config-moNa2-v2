@@ -389,7 +389,7 @@
     };
 };
 
-&zip_mouse_gesture_mac_tab {
+&zip_mouse_gesture {
     enable-eager-mode;
     always-active;
     stroke-size = <5>;
@@ -415,34 +415,5 @@
     close_tab {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(W)>;
-    };
-};
-
-&zip_mouse_gesture_win_tab {
-    enable-eager-mode;
-    always-active;
-    stroke-size = <5>;
-    movement-threshold = <6>;
-    idle-timeout-ms = <100>;
-    gesture-cooldown-ms = <120>;
-
-    prev_tab {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LC(LS(TAB))>;
-    };
-
-    next_tab {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(TAB)>;
-    };
-
-    Create_tab {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LC(T)>;
-    };
-
-    close_tab {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LC(W)>;
     };
 };
