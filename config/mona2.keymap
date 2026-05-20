@@ -397,10 +397,7 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
 
-    prev_tab {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LC(LS(TAB))>;
-    };
+    prev_tab { pattern = <GESTURE_LEFT>; bindings = <&kp LC(LS(TAB))>; };
 
     next_tab {
         pattern = <GESTURE_RIGHT>;
