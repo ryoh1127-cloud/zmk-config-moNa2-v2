@@ -397,20 +397,23 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
 
-    prev_tab { pattern = <GESTURE_LEFT>; bindings = <&kp LC(LS(TAB))>; };
+    // ---- 既存のデフォルトジェスチャー ----
+    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 
-    next_tab {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(TAB)>;
-    };
+    // ==========================================
+    // Layer 12 (Gesture_L2) 用のジェスチャー設定
+    // ==========================================
+    layer-12-gestures {
+        // 対象のレイヤー番号（12）を指定
+        layers = <12>;
 
-    Create_tab {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LG(T)>;
-    };
-
-    close_tab {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(W)>;
+        // 例：Layer 12のときに、上・下・左・右に振った際のアクションを定義
+        l12_up    { pattern = <GESTURE_UP>;    bindings = <&kp C_VOLUME_UP>; };   // 音量を上げる
+        l12_down  { pattern = <GESTURE_DOWN>;  bindings = <&kp C_VOLUME_DOWN>; }; // 音量を下げる
+        l12_left  { pattern = <GESTURE_LEFT>;  bindings = <&kp LA(LEFT)>; };      // ブラウザの「戻る」
+        l12_right { pattern = <GESTURE_RIGHT>; bindings = <&kp LA(RIGHT)>; };     // ブラウザの「進む」
     };
 };
