@@ -1,7 +1,6 @@
 #include "mona2.dtsi"
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
 #include <mouse-gesture.dtsi>
 
@@ -23,15 +22,14 @@
 };
 
 &kscan0 {
-        col-gpios
-            = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
-            , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
-            , <&gpio0 10 GPIO_ACTIVE_HIGH>
-            ;
+    col-gpios
+        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        ;
 };
-
 
 &pinctrl {
     spi0_default: spi0_default {    //通常時(SPI通信中)のピン構成
@@ -51,7 +49,6 @@
         };
     };
 };
-
 
 &spi0 {
     status = "okay";
@@ -95,7 +92,7 @@
 
     //input-processors = <&zip_temp_layer 8 10000>; //無効
 
-// ★追加：レイヤー2のときだけカーソルを遅くする設定
+// ★追加：レイヤー4, 5のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
         input-processors = 
@@ -110,10 +107,11 @@
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
+            <&zip_scroll_scaler 1 16>;                            //スクロール量を1/4倍
     };
-// レイヤー10のときにY軸反転スクロール
-scroller_reverse {
+
+    // レイヤー10のときにY軸反転スクロール
+    scroller_reverse {
         layers = <10>;
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
@@ -122,20 +120,26 @@ scroller_reverse {
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-// =========================================================================
-// レイヤー11のときにジェスチャーを有効にする
-// =========================================================================
+
+    // =========================================================================
+    // レイヤー11のときにジェスチャーを有効にする
+    // =========================================================================
     mouse_gesture_mode {
         layers = <11>;
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
+}; // ←ここで確実に &trackball_central_listener を閉じる
+
 // =========================================================================
-};
-    layer_listeners {
+// レイヤーリスナーの定義（ルートレベルに配置する必要があるため単独で記述）
+// =========================================================================
+/ {
+    layer_listeners: layer_listeners {
         compatible = "zmk,layer-listeners";
 
         mouse_gesture_mode {
             layers = <11>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
+    };
 };
