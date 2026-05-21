@@ -10,7 +10,7 @@
 &pointer_accel {
     input-type = <INPUT_EV_REL>;  // For relative input devices
     track-remainders;             // Accumulate fractional movements
-    min-factor = <1000>;          // 0.8x at very slow speeds
+    min-factor = <800>;          // 0.8x at very slow speeds
     max-factor = <2500>;         // 3.0x at fast speeds
     speed-threshold = <1500>;     // 1200 counts/sec for 1x
     speed-max = <6000>;          // 6000 counts/sec for max accel
@@ -121,17 +121,12 @@ scroller_reverse {
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-};
-
-// ★改めてジェスチャー用の設定を listener に追加します
-&trackball_central_listener {
-    mouse_gesture_layer11 {
+// =========================================================================
+// レイヤー11のときにジェスチャーを有効にする
+// =========================================================================
+    mouse_gesture_mode {
         layers = <11>;
-        input-processors = <&zip_mouse_gesture_11 &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
-
-    mouse_gesture_layer12 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture_12 &zip_xy_scaler 0 1>;
-    };
+// =========================================================================
 };
