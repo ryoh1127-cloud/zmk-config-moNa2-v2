@@ -143,8 +143,8 @@ scroller_reverse {
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
         
-    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
+　　prev_tab   { pattern = <1>; bindings = <&kp LC(LS(TAB))>; }; // 左方向 (旧: GESTURE_LEFT)
+    next_tab   { pattern = <2>; bindings = <&kp LC(TAB)>; };    // 右方向 (旧: GESTURE_RIGHT)
+    Create_tab { pattern = <3>; bindings = <&kp LG(T)>; };     // 上方向 (旧: GESTURE_UP)
+    close_tab  { pattern = <4>; bindings = <&kp LG(W)>; };     // 下方向 (旧: GESTURE_DOWN)
 };
