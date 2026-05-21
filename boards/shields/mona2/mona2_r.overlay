@@ -3,6 +3,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
+#include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
 // =========================================================================
 // ★追加：加速度（アクセラレーション）のカーブ設定
@@ -10,7 +11,7 @@
 &pointer_accel {
     input-type = <INPUT_EV_REL>;  // For relative input devices
     track-remainders;             // Accumulate fractional movements
-    min-factor = <8800>;          // 0.8x at very slow speeds
+    min-factor = <800>;          // 0.8x at very slow speeds
     max-factor = <2500>;         // 3.0x at fast speeds
     speed-threshold = <1500>;     // 1200 counts/sec for 1x
     speed-max = <6000>;          // 6000 counts/sec for max accel
@@ -121,12 +122,50 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
+gest_on_l1 {
+            layers = <11>;
+            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        };
+
+        // gest_on_l2 {
+            layers = <12>;
+            input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
+        };
+
+        // gest_on_l3 {
+            layers = <13>;
+            input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
+        };
+
+
+
+
 // =========================================================================
 // レイヤー11のときにジェスチャーを有効にする
 // =========================================================================
-    mouse_gesture_mode {
+    // mouse_gesture_mode {
         layers = <11>;
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
 // =========================================================================
 };
+
+layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        // Layer 11 に入ったらジェスチャーON、抜けたらOFF
+        gesture_on_l1 {
+            layers = <11>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        // gesture_on_l2 {
+            layers = <12;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        // gesture_on_l3 {
+            layers = <13>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
