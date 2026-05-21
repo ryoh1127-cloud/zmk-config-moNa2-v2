@@ -121,12 +121,15 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-// =========================================================================
-// レイヤー11のときにジェスチャーを有効にする
-// =========================================================================
-    mouse_gesture_mode {
+
+&trackball_central_listener {
+    mouse_gesture_layer11 {
         layers = <11>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture_11 &zip_xy_scaler 0 1>;
     };
-// =========================================================================
+
+    mouse_gesture_layer12 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_12 &zip_xy_scaler 0 1>;
+    };
 };
