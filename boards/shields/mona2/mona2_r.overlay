@@ -1,4 +1,4 @@
-ｐ#include "mona2.dtsi"
+#include "mona2.dtsi"
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
@@ -121,7 +121,7 @@ scroller_reverse {
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-}; // ★ここに閉じカッコを追加して、上の listener を一旦きっちり閉じます
+};
 
 // ★改めてジェスチャー用の設定を listener に追加します
 &trackball_central_listener {
