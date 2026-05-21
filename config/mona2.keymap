@@ -422,4 +422,5 @@ zip_mouse_gesture_12: zip_mouse_gesture_12 {
     create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LC(T)>; };
     close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(W)>; };
 };
+};
 
