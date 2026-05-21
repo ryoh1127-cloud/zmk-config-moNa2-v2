@@ -396,9 +396,30 @@
     movement-threshold = <6>;
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
-        
-        prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-        next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-        Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
-        close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 };
+
+// レイヤー11用
+zip_mouse_gesture_11: zip_mouse_gesture_11 {
+    compatible = "zmk,input-processor-mouse-gesture";
+    #input-processor-cells = <0>;
+    
+    // レイヤー11専用の設定
+    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+    create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
+};
+
+// レイヤー12用
+zip_mouse_gesture_12: zip_mouse_gesture_12 {
+    compatible = "zmk,input-processor-mouse-gesture";
+    #input-processor-cells = <0>;
+    
+    // レイヤー12専用の設定
+
+    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+    create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LC(T)>; };
+    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(W)>; };
+};
+
