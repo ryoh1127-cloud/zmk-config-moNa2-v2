@@ -1,4 +1,4 @@
-#include "mona2.dtsi"
+ｐ#include "mona2.dtsi"
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
@@ -112,7 +112,7 @@
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
     };
 // レイヤー10のときにY軸反転スクロール
-    scroller_reverse {
+scroller_reverse {
         layers = <10>;
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
@@ -121,7 +121,9 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
+}; // ★ここに閉じカッコを追加して、上の listener を一旦きっちり閉じます
 
+// ★改めてジェスチャー用の設定を listener に追加します
 &trackball_central_listener {
     mouse_gesture_layer11 {
         layers = <11>;
