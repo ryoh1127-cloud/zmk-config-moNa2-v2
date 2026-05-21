@@ -85,29 +85,27 @@
     status = "okay";
     device = <&trackball_central>;
 
-// ★変更：入力チェーンの先頭に &pointer_accel を追加
+// 入力チェーンの先頭に &pointer_accel を追加
     input-processors = <
         &pointer_accel
         &zip_temp_layer 8 10000>;
 
-    //input-processors = <&zip_temp_layer 8 10000>; //無効
-
-// ★追加：レイヤー4, 5のときだけカーソルを遅くする設定
+// レイヤー4, 5のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
         input-processors = 
-            <&zip_temp_layer 8 10000>, // オートマウスの設定を引き継ぐ
-            <&zip_xy_scaler 1 3>;       // カーソル移動量を1/3倍（3倍遅く）にする
+            <&zip_temp_layer 8 10000>, 
+            <&zip_xy_scaler 1 3>;       
     };
 
     scroller {
         layers = <9>;
         input-processors = 
-            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 16>;                            //スクロール量を1/4倍
+            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       
+            <&zip_xy_to_scroll_mapper>,                         
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   
+            <&zip_scroll_scaler 1 16>;                            
     };
 
     // レイヤー10のときにY軸反転スクロール
@@ -121,24 +119,58 @@
             <&zip_scroll_scaler 1 16>;
     };
 
-    // =========================================================================
-    // レイヤー11のときにジェスチャーを有効にする
-    // =========================================================================
+    // レイヤー11のときにジェスチャーを有効にする（標準エンジンを使用）
     mouse_gesture_mode {
         layers = <11>;
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
-}; // ←ここで確実に &trackball_central_listener を閉じる
+
+    // ★新規追加：レイヤー12用のジェスチャー設定
+    mouse_gesture_mode_l12 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_l12 &zip_xy_scaler 0 1>;
+    };
+
+    // ★新規追加：レイヤー13用のジェスチャー設定
+    mouse_gesture_mode_l13 {
+        layers = <13>;
+        input-processors = <&zip_mouse_gesture_l13 &zip_xy_scaler 0 1>;
+    };
+}; 
 
 // =========================================================================
-// レイヤーリスナーの定義（ルートレベルに配置する必要があるため単独で記述）
+// 新しいジェスチャーエンジンの定義 ＆ レイヤーリスナー
 // =========================================================================
 / {
+    /* ★新規追加：Layer12 と Layer13 で別々のジェスチャーを使うための独立した定義（インスタンス） */
+    zip_mouse_gesture_l12: zip_mouse_gesture_l12 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+    };
+
+    zip_mouse_gesture_l13: zip_mouse_gesture_l13 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+    };
+
+    /* レイヤー自動監視設定 */
     layer_listeners: layer_listeners {
         compatible = "zmk,layer-listeners";
 
         mouse_gesture_mode {
             layers = <11>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        // ★新規追加：Layer 12に入ったら自動でON、抜けたらOFF
+        mouse_gesture_mode_l12 {
+            layers = <12>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        // ★新規追加：Layer 13に入ったら自動でON、抜けたらOFF
+        mouse_gesture_mode_l13 {
+            layers = <13>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
     };
