@@ -7,6 +7,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+// 既存の定義と衝突しないように一度消してから再定義
+#undef ZMK_POINTING_DEFAULT_SCRL_VAL
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
 
@@ -361,10 +363,8 @@
 };
 
 // =========================================================================
-// ★各ジェスチャーレイヤー（11, 12, 13）ごとの独立した挙動設定
+// ★ 各ジェスチャーレイヤー（11, 12, 13）の条件分岐設定
 // =========================================================================
-
-/* Layer 11 (Gesture_L1) 用：元々の設定（ブラウザタブ操作など） */
 &zip_mouse_gesture {
     enable-eager-mode;
     always-active;
@@ -373,40 +373,27 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
         
-    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
-};
+    // ---------------------------------------------------------
+    // Layer 11 (Gesture_L1): ブラウザタブ操作など
+    // ---------------------------------------------------------
+    prev_tab   { layers = <11>; pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab   { layers = <11>; pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+    Create_tab { layers = <11>; pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+    close_tab  { layers = <11>; pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 
-/* Layer 12 (Gesture_L2) 用：完全に独立した設定（例: 音量や戻る進むなど） */
-&zip_mouse_gesture_l12 {
-    enable-eager-mode;
-    always-active;
-    stroke-size = <5>;
-    movement-threshold = <6>;
-    idle-timeout-ms = <100>;
-    gesture-cooldown-ms = <120>;
+    // ---------------------------------------------------------
+    // Layer 12 (Gesture_L2): 音量や進む・戻るなど
+    // ---------------------------------------------------------
+    g12_left  { layers = <12>; pattern = <GESTURE_LEFT>;  bindings = <&kp LA(LEFT)>; };  // 例: ブラウザ戻る
+    g12_right { layers = <12>; pattern = <GESTURE_RIGHT>; bindings = <&kp LA(RIGHT)>; }; // 例: ブラウザ進む
+    g12_up    { layers = <12>; pattern = <GESTURE_UP>;    bindings = <&kp C_VOL_UP>; };   // 例: 音量UP
+    g12_down  { layers = <12>; pattern = <GESTURE_DOWN>;  bindings = <&kp C_VOL_DN>; };   // 例: 音量DOWN
 
-    // 💡 ここにLayer 12用の好きな動きを割り当ててください
-    g12_left  { pattern = <GESTURE_LEFT>;  bindings = <&kp LA(LEFT)>; };  // 例: ブラウザ戻る
-    g12_right { pattern = <GESTURE_RIGHT>; bindings = <&kp LA(RIGHT)>; }; // 例: ブラウザ進む
-    g12_up    { pattern = <GESTURE_UP>;    bindings = <&kp C_VOL_UP>; };   // 例: 音量UP
-    g12_down  { pattern = <GESTURE_DOWN>;  bindings = <&kp C_VOL_DN>; };   // 例: 音量DOWN
-};
-
-/* Layer 13 (Gesture_L3) 用：完全に独立した設定（例: 仮想デスクトップ等） */
-&zip_mouse_gesture_l13 {
-    enable-eager-mode;
-    always-active;
-    stroke-size = <5>;
-    movement-threshold = <6>;
-    idle-timeout-ms = <100>;
-    gesture-cooldown-ms = <120>;
-
-    // 💡 ここにLayer 13用の好きな動きを割り当ててください
-    g13_left  { pattern = <GESTURE_LEFT>;  bindings = <&kp LG(LC(LEFT))>; };  // 例: 左の仮想デスクトップ
-    g13_right { pattern = <GESTURE_RIGHT>; bindings = <&kp LG(LC(RIGHT))>; }; // 例: 右の仮想デスクトップ
-    g13_up    { pattern = <GESTURE_UP>;    bindings = <&kp LG(UP)>; };         // 例: ウィンドウ最大化
-    g13_down  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(DOWN)>; };       // 例: ウィンドウ最小化
+    // ---------------------------------------------------------
+    // Layer 13 (Gesture_L3): 仮想デスクトップ操作など
+    // ---------------------------------------------------------
+    g13_left  { layers = <13>; pattern = <GESTURE_LEFT>;  bindings = <&kp LG(LC(LEFT))>; };  // 例: 左デスクトップ
+    g13_right { layers = <13>; pattern = <GESTURE_RIGHT>; bindings = <&kp LG(LC(RIGHT))>; }; // 例: 右デスクトップ
+    g13_up    { layers = <13>; pattern = <GESTURE_UP>;    bindings = <&kp LG(UP)>; };         // 例: ウィンドウ最大化
+    g13_down  { layers = <13>; pattern = <GESTURE_DOWN>;  bindings = <&kp LG(DOWN)>; };       // 例: ウィンドウ最小化
 };
