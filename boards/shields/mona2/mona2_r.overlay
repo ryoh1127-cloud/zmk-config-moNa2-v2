@@ -150,15 +150,16 @@
 // =========================================================================
 };
 
-layer_listeners {
+/ {
+    layer_listeners {
         compatible = "zmk,layer-listeners";
 
-        // Layer 11 に入ったらジェスチャーON、抜けたらOFF
         gesture_on_l1 {
             layers = <11>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
 
+        /*
         gesture_on_l2 {
             layers = <12>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
@@ -168,4 +169,6 @@ layer_listeners {
             layers = <13>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
+        */
     };
+};
