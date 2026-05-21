@@ -122,53 +122,12 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-
-    // レイヤー6: 仮想デスクトップ系＋タスクビュー＋普通の右矢印
-
-    layer6_ctrl {
-        layers = <11>;
-        bindings =
-            <&kp LG(LA(LC(RIGHT_ARROW)))>,
-            // 右: Win + Alt + Ctrl + →,,,,,
-            <&kp LG(LA(LC(LEFT_ARROW)))>,
-            // 左: Win + Alt + Ctrl + ←,,,,,
-            <&kp LG(TAB)>,
-            // 上: Win + Tab,,,,,
-            <&kp LG(M)>;
-
-        // 下: → だけ
-
-        tick = <200>;
-        wait-ms = <40>;
-        tap-ms = <5>;
-    };
-
-    // レイヤー5: ウィンドウスナップ系
-
-    layer5_snap {
-        layers = <12>;
-        bindings =
-            <&kp LG(RIGHT_ARROW)>,
-            // 右にスナップ (Win + →),,,,,
-            <&kp LG(LEFT_ARROW)>,
-            // 左にスナップ (Win + ←),,,,,
-            <&kp LG(UP_ARROW)>,
-            // 最大化   (Win + ↑),,,,,
-            <&kp LG(DOWN_ARROW)>;
-
-        // 最小化 or 元のサイズ (Win + ↓)
-
-        tick = <200>;
-        wait-ms = <40>;
-        tap-ms = <5>;
-    };
 // =========================================================================
 // レイヤー11のときにジェスチャーを有効にする
 // =========================================================================
-    //mouse_gesture_mode {
-        //layers = <11>;
-        //input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-    //};
+    mouse_gesture_mode {
+        layers = <11>;
+        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+    };
 // =========================================================================
-    }; // ← layer5_snap などの設定ブロックの並びをここで一度閉じます
-}; //
+};
