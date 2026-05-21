@@ -390,35 +390,43 @@
 };
 
 &zip_mouse_gesture {
-    enable-eager-mode;
-    always-active;
-    stroke-size = <5>;
-    movement-threshold = <6>;
-    idle-timeout-ms = <100>;
-    gesture-cooldown-ms = <120>;
-};
+    enable-eager-mode;
+    always-active;
+    stroke-size = <5>;
+    movement-threshold = <6>;
+    idle-timeout-ms = <100>;
+    gesture-cooldown-ms = <120>;
+        
+    // --- 既存の全レイヤー共通（またはLayer 11用）のジェスチャー ---
+    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 
-// レイヤー11用
-zip_mouse_gesture_11: zip_mouse_gesture_11 {
-    compatible = "zmk,input-processor-mouse-gesture";
-    #input-processor-cells = <0>;
-    
-    // レイヤー11専用の設定
-    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-    create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
-};
+    // --- ★ここからLayer 12（Gesture_L2）専用のジェスチャーを新規追加 ---
+    // 例として、Windows用の仮想デスクトップ切り替えやブラウザバックなどを想定したサンプルです。
+    // お好みのバインディング（&kp やマクロ）に書き換えてください。
+    win_prev_desktop {
+        layers = <12>; // ★Layer 12のときだけ有効にする指定
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LG(LC(LEFT))>; 
+    };
 
-// レイヤー12用
-zip_mouse_gesture_12: zip_mouse_gesture_12 {
-    compatible = "zmk,input-processor-mouse-gesture";
-    #input-processor-cells = <0>;
-    
-    // レイヤー12専用の設定
+    win_next_desktop {
+        layers = <12>;
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LG(LC(RIGHT))>;
+    };
 
-    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-    create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LC(T)>; };
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(W)>; };
+    win_up_action {
+        layers = <12>;
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LG(UP)>; // ウィンドウ最大化など
+    };
+
+    win_down_action {
+        layers = <12>;
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(DOWN)>; // ウィンドウ最小化など
+    };
 };
