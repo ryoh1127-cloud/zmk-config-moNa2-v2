@@ -9,7 +9,7 @@
 
 #include "gesture/gesture_L1.dtsi"
 #include "gesture/gesture_L2.dtsi"
-#include "gesture/gesture_L3.dtsi"
+//#include "gesture/gesture_L3.dtsi"
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
