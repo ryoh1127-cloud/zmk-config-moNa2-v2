@@ -51,7 +51,7 @@
 };
 
 / {
-    combos {
+    /*combos {
         compatible = "zmk,combos";
 
         Gesture_L8 {
@@ -88,7 +88,7 @@
             bindings = <&mo 9>;
             key-positions = <18 19>;
         };
-    };
+    };*/
 
     macros {
         to_layer_0: to_layer_0 {
