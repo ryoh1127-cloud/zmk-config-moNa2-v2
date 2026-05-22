@@ -89,11 +89,11 @@
     device = <&trackball_central>;
 
 // 入力チェーンの先頭に &pointer_accel を追加
-    input-processors = <
-        &pointer_accel
-        &zip_temp_layer 8 10000>;
+    // input-processors = <
+        // &pointer_accel
+        // &zip_temp_layer 8 10000>;
 
-    //input-processors = <&zip_temp_layer 8 10000>; //無効
+    input-processors = <&zip_temp_layer 8 10000>; //無効
 
 
 // レイヤー2のときだけカーソルを遅くする設定
