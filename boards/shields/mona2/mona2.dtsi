@@ -92,7 +92,7 @@
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
         status = "okay";
-        device = <&pmw3610_tb>;
+        device = <&pmw3610>;
 
         gest_on_l1 {
             layers = <11>;
