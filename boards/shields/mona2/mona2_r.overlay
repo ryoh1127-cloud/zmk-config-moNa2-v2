@@ -138,39 +138,3 @@
     };
 // =========================================================================
 };
-// =========================================================================
-// 右手側専用：レイヤー12用（2つ目）のマウスジェスチャー定義と連動設定
-// =========================================================================
-
-/ {
-    // 1. レイヤー12用の新しいジェスチャープロセッサを定義
-    zip_mouse_gesture2: zip_mouse_gesture2 {
-        compatible = "zmk,mouse-gesture";
-        status = "okay";
-        #input-processor-cells = <0>;
-        input-processor; 
-    };
-};
-
-// 2. 新しいジェスチャープロセッサの方向キーバインド設定
-&zip_mouse_gesture2 {
-    enable-eager-mode;
-    always-active;
-    stroke-size = <5>;
-    movement-threshold = <6>;
-    idle-timeout-ms = <100>;
-    gesture-cooldown-ms = <120>;
-        
-    l12_left   { pattern = <GESTURE_LEFT>;  bindings = <&kp LEFT>; };
-    l12_right  { pattern = <GESTURE_RIGHT>; bindings = <&kp RIGHT>; };
-    l12_up     { pattern = <GESTURE_UP>;    bindings = <&kp UP>; };
-    l12_down   { pattern = <GESTURE_DOWN>;  bindings = <&kp DOWN>; };
-};
-
-// 3. トラックボールのリスナーにレイヤー12用の設定として登録
-&trackball_central_listener {
-    mouse_gesture_mode_l12 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture2 &zip_xy_scaler 0 1>;
-    };
-};
