@@ -130,6 +130,11 @@
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
 // =========================================================================
+// ★追加：レイヤー12用の設定
+    mouse_gesture_mode_l12 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_l12 &zip_xy_scaler 0 1>;
+    };
 };
 // 既存の定義の邪魔にならない場所に追記
 / {
