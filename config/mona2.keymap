@@ -410,6 +410,7 @@
         compatible = "zmk,mouse-gesture";
         status = "okay";
         #input-processor-cells = <0>;
+        input-processor; // ZMKの入力処理システムと連携させます
     };
 };
 
