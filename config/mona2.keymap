@@ -366,7 +366,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
-            sensor-bindings = <&zip_mouse_gesture>;
         };
 
         Gesture_L2 {
@@ -376,7 +375,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
-            sensor-bindings = <&zip_mouse_gesture>;
         };
 
         Gesture_L3 {
