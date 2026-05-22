@@ -287,7 +287,7 @@
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none          &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
 &kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                   &none   &kp SEMICOLON  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp LSHIFT        &kp GRAVE          &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON      &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
+&kp LSHIFT        &kp GRAVE          &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON      &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
@@ -298,7 +298,7 @@
             bindings = <
 &kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none             &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
 &kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none   &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LS(0x89)
-&kp LSHIFT        &kp LEFT_BRACE  &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
+&kp LSHIFT        &kp LEFT_BRACE  &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
 &trans            &trans          &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
@@ -389,8 +389,6 @@
     };
 };
 
-// 記述場所：mona2.keymap の最下部（既存の &zip_mouse_gesture と差し替え）
-
 &zip_mouse_gesture {
     enable-eager-mode;
     always-active;
@@ -398,58 +396,10 @@
     movement-threshold = <6>;
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
-
-    // =========================================================================
-    // 🍏 レイヤー11（Mac用）のジェスチャー設定
-    // =========================================================================
-    mac_left {
-        layers = <11>;  // レイヤー11のときだけ発動
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(LBKT)>;  // 左：ブラウザ戻る (Cmd + [ )
-    };
-
-    mac_right {
-        layers = <11>;
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(RBKT)>;  // 右：ブラウザ進む (Cmd + ] )
-    };
-
-    mac_up {
-        layers = <11>;
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LC(UP)>;    // 上：Mission Control (Ctrl + ↑)
-    };
-
-    mac_down {
-        layers = <11>;
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LC(DOWN)>;  // 下：Application Windows (Ctrl + ↓)
-    };
-
-    // =========================================================================
-    // 🪟 レイヤー12（Windows用）のジェスチャー設定
-    // =========================================================================
-    win_left {
-        layers = <12>;  // レイヤー12のときだけ発動
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(LEFT)>;  // 左：ブラウザ戻る (Alt + ←)
-    };
-
-    win_right {
-        layers = <12>;
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(RIGHT)>; // 右：ブラウザ進む (Alt + →)
-    };
-
-    win_up {
-        layers = <12>;
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LG(UP)>;    // 上：ウィンドウ最大化 (Win + ↑)
-    };
-
-    win_down {
-        layers = <12>;
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(DOWN)>;  // 下：ウィンドウ最小化 (Win + ↓)
-    };
+        
+        prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+        next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+        Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+        close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
+};
 };
