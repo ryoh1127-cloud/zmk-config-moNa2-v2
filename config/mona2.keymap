@@ -389,6 +389,8 @@
     };
 };
 
+// 記述場所：mona2.keymap の最下部（既存の &zip_mouse_gesture と差し替え）
+
 &zip_mouse_gesture {
     enable-eager-mode;
     always-active;
@@ -397,23 +399,57 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
 
-    prev_tab {
+    // =========================================================================
+    // 🍏 レイヤー11（Mac用）のジェスチャー設定
+    // =========================================================================
+    mac_left {
+        layers = <11>;  // レイヤー11のときだけ発動
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LC(LS(TAB))>;
+        bindings = <&kp LG(LBKT)>;  // 左：ブラウザ戻る (Cmd + [ )
     };
 
-    next_tab {
+    mac_right {
+        layers = <11>;
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(TAB)>;
+        bindings = <&kp LG(RBKT)>;  // 右：ブラウザ進む (Cmd + ] )
     };
 
-    Create_tab {
+    mac_up {
+        layers = <11>;
         pattern = <GESTURE_UP>;
-        bindings = <&kp LG(T)>;
+        bindings = <&kp LC(UP)>;    // 上：Mission Control (Ctrl + ↑)
     };
 
-    close_tab {
+    mac_down {
+        layers = <11>;
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(W)>;
+        bindings = <&kp LC(DOWN)>;  // 下：Application Windows (Ctrl + ↓)
+    };
+
+    // =========================================================================
+    // 🪟 レイヤー12（Windows用）のジェスチャー設定
+    // =========================================================================
+    win_left {
+        layers = <12>;  // レイヤー12のときだけ発動
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(LEFT)>;  // 左：ブラウザ戻る (Alt + ←)
+    };
+
+    win_right {
+        layers = <12>;
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(RIGHT)>; // 右：ブラウザ進む (Alt + →)
+    };
+
+    win_up {
+        layers = <12>;
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LG(UP)>;    // 上：ウィンドウ最大化 (Win + ↑)
+    };
+
+    win_down {
+        layers = <12>;
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(DOWN)>;  // 下：ウィンドウ最小化 (Win + ↓)
     };
 };
