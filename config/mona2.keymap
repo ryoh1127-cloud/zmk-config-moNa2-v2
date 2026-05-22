@@ -401,7 +401,27 @@
         Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
         close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 };
-// ★追加：レイヤー12用の新しいジェスチャー設定
+
+// =========================================================================
+// ★追加：レイヤー12用の新しいマウスジェスチャーノードの定義
+// =========================================================================
+/ {
+    zip_mouse_gesture_l12: zip_mouse_gesture_l12 {
+        compatible = "zmk,mouse-gesture";
+        status = "okay";
+        #input-processor-cells = <0>;
+    };
+};
+
+// ★追加：トラックボールリスナーへの割り当て
+&trackball_central_listener {
+    mouse_gesture_mode_l12 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_l12 &zip_xy_scaler 0 1>;
+    };
+};
+
+// ★追加：レイヤー12用のジェスチャーキーバインド設定
 &zip_mouse_gesture_l12 {
     enable-eager-mode;
     always-active;
@@ -410,9 +430,9 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
         
-    // ここにレイヤー12で発動させたい独自のジェスチャーとキーを割り当ててください
-    l12_left   { pattern = <GESTURE_LEFT>;  bindings = <&kp LEFT>; };  // 例: 左に振ったらLeftキー
-    l12_right  { pattern = <GESTURE_RIGHT>; bindings = <&kp RIGHT>; }; // 例: 右に振ったらRightキー
-    l12_up     { pattern = <GESTURE_UP>;    bindings = <&kp UP>; };    // 例: 上に振ったらUpキー
-    l12_down   { pattern = <GESTURE_DOWN>;  bindings = <&kp DOWN>; };  // 例: 下に振ったらDownキー
+    // レイヤー12で動かしたい独自のジェスチャー（自由に書き換えてください）
+    l12_left   { pattern = <GESTURE_LEFT>;  bindings = <&kp LEFT>; };
+    l12_right  { pattern = <GESTURE_RIGHT>; bindings = <&kp RIGHT>; };
+    l12_up     { pattern = <GESTURE_UP>;    bindings = <&kp UP>; };
+    l12_down   { pattern = <GESTURE_DOWN>;  bindings = <&kp DOWN>; };
 };
