@@ -406,7 +406,7 @@
 // ★追加：レイヤー12用の新しいマウスジェスチャーノードの定義
 // =========================================================================
 / {
-    zip_mouse_gesture_l12: zip_mouse_gesture_l12 {
+    zip_mouse_gestur2: zip_mouse_gesture_2 {
         compatible = "zmk,mouse-gesture";
         status = "okay";
         #input-processor-cells = <0>;
@@ -415,7 +415,7 @@
 };
 
 // ★追加：レイヤー12用のジェスチャーキーバインド設定
-&zip_mouse_gesture_l12 {
+&zip_mouse_gesture2 {
     enable-eager-mode;
     always-active;
     stroke-size = <5>;
