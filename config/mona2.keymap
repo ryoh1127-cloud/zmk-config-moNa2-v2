@@ -234,7 +234,7 @@
         hidari_waza: hidari_waza {
             compatible = "zmk,behavior-key-toggle";
             label = "HIDARI_WAZA";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             bindings = <&kp LC(LS(TAB))>; // 普段：前のタブ
         };
     };
