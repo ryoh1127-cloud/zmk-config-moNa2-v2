@@ -12,4 +12,5 @@
     next_tab    { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     };
     Create_tab  { pattern = <GESTURE_UP>;    bindings = <&kp LC(T)>;      };
     close_tab   { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(W)>;       };
+  };
 };
