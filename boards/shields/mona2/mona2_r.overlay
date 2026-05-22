@@ -95,6 +95,18 @@
 
     //input-processors = <&zip_temp_layer 8 10000>; //無効
 
+    gest_on_l1 {
+        layers = <11>;
+        input-processors = <&zip_mouse_gesture_l1 &zip_xy_scaler 0 1>;
+    };
+
+    /* 3. レイヤー12: ジェスチャー有効化 */
+    gest_on_l2 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
+    };
+
+
 // レイヤー2のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
@@ -130,17 +142,13 @@
     layer_listeners {
         compatible = "zmk,layer-listeners";
 
-        /* レイヤー11: ジェスチャー有効化 */
         gesture_on_l1 {
             layers = <11>;
-            input-processors = <&zip_mouse_gesture_l1 &zip_xy_scaler 0 1>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
 
-        /* レイヤー12: ジェスチャー有効化 */
         gesture_on_l2 {
             layers = <12>;
-            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
     };
