@@ -367,6 +367,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
+　　　　　　　sensor-bindings = <&zip_mouse_gesture>;
         };
 
         Gesture_L2 {
@@ -376,6 +377,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
+　　　　　　　sensor-bindings = <&zip_mouse_gesture>;
         };
 
         Gesture_L3 {
@@ -396,13 +398,13 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
 
-    /* レイヤー5（MOUSE）で動作する既存のジェスチャー */
-    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; layers = <11>; };
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     layers = <11>; };
-    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>;       layers = <11>; };
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>;       layers = <11>; };
+    /* レイヤー11用 */
+    l11_prev   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    l11_next   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     };
+    l11_up     { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>;       };
+    l11_down   { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>;       };
 
-    /* レイヤー12で動作する新しいジェスチャーの追加例 */
-    l12_up    { pattern = <GESTURE_UP>;    bindings = <&kp F1>;  layers = <12>; };
-    l12_down  { pattern = <GESTURE_DOWN>;  bindings = <&kp F2>;  layers = <12>; };
+    /* レイヤー12用 */
+    l12_up     { pattern = <GESTURE_UP>;    bindings = <&kp F1>;          };
+    l12_down   { pattern = <GESTURE_DOWN>;  bindings = <&kp F2>;          };
 };
