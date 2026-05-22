@@ -122,13 +122,22 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-// =========================================================================
-// レイヤー11のときにジェスチャーを有効にする
-// =========================================================================
-    mouse_gesture_mode {
-        layers = <11 12>;
+
+// ★追加：レイヤー11用のジェスチャー設定
+    gest_on_l1 {
+        layers = <11>;
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
-// =========================================================================
 };
 
+// ★追加：レイヤーリスナー（ジェスチャーのON/OFF切り替え用）
+/ {
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture_on_l1 {
+            layers = <11>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
+};
