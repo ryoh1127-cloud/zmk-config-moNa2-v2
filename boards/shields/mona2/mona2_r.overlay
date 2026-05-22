@@ -88,12 +88,23 @@
     status = "okay";
     device = <&trackball_central>;
 
-input-processors = <&zip_mouse_gesture_l1>;
-
 // 入力チェーンの先頭に &pointer_accel を追加
     input-processors = <
         &pointer_accel
         &zip_temp_layer 8 10000>;
+
+// レイヤー11用（ジェスチャー）
+    gest_on_l1 {
+        layers = <11>;
+        /* 基本の設定に加え、ジェスチャーを追加する */
+        input-processors = <&zip_mouse_gesture_l1>;
+    };
+
+    // レイヤー12用
+    gest_on_l2 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
+    };
 
     //input-processors = <&zip_temp_layer 8 10000>; //無効
 
@@ -125,19 +136,6 @@ input-processors = <&zip_mouse_gesture_l1>;
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-
-// レイヤー11用のジェスチャー設定
-    gest_on_l1 {
-        layers = <11>;
-        input-processors = <&zip_mouse_gesture_l1>;
-        //input-processors = <&zip_mouse_gesture_l1 &zip_xy_scaler 0 1>;
-
-    };
-
-        gest_on_l2 {
-            layers = <12>;
-            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
-        };
 
 };
 
