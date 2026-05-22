@@ -429,12 +429,3 @@
     l12_up     { pattern = <GESTURE_UP>;    bindings = <&kp UP>; };
     l12_down   { pattern = <GESTURE_DOWN>;  bindings = <&kp DOWN>; };
 };
-// =========================================================================
-// ★右手側（トラックボールがある側）だけにリスナーの設定を紐付けます
-// =========================================================================
-&trackball_central_listener {
-    mouse_gesture_mode_l12 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture_l12 &zip_xy_scaler 0 1>;
-    };
-};
