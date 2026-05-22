@@ -130,17 +130,19 @@
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
 // =========================================================================
-// ★追加：レイヤー12用の設定
-    mouse_gesture_mode_l12 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture_l12 &zip_xy_scaler 0 1>;
-    };
 };
-// 既存の定義の邪魔にならない場所に追記
 / {
-    // レイヤー12用のジェスチャーインスタンスを新設
+    // レイヤー12用のマウスジェスチャーノードをルート直下に新設
     zip_mouse_gesture_l12: zip_mouse_gesture_l12 {
         compatible = "zmk,mouse-gesture";
         #input-processor-cells = <0>;
+    };
+};
+
+// トラックボールリスナーにレイヤー12の設定を追加
+&trackball_central_listener {
+    mouse_gesture_mode_l12 {
+        layers = <12>;
+        input-processors = <&zip_mouse_gesture_l12 &zip_xy_scaler 0 1>;
     };
 };
