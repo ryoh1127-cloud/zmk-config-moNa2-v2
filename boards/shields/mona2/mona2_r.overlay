@@ -6,16 +6,36 @@
 #include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
 // =========================================================================
+// ジェスチャーモジュールの定義（ここが重要です）
+// =========================================================================
+/ {
+    zip_mouse_gesture_l1: zip_mouse_gesture_l1 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>; 
+        enable-eager-mode;
+        stroke-size = <5>;
+        movement-threshold = <6>;
+        idle-timeout-ms = <100>;
+        gesture-cooldown-ms = <120>;
+
+        prev_tab    { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+        next_tab    { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     };
+        Create_tab  { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>;       };
+        close_tab   { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>;       };
+    };
+};
+
+// =========================================================================
 // ★追加：加速度（アクセラレーション）のカーブ設定
 // =========================================================================
 &pointer_accel {
-    input-type = <INPUT_EV_REL>;  // For relative input devices
-    track-remainders;             // Accumulate fractional movements
-    min-factor = <800>;          // 0.8x at very slow speeds
-    max-factor = <2500>;         // 3.0x at fast speeds
-    speed-threshold = <1500>;     // 1200 counts/sec for 1x
-    speed-max = <6000>;          // 6000 counts/sec for max accel
-    acceleration-exponent = <2>;  // Quadratic acceleration curve
+    input-type = <INPUT_EV_REL>;
+    track-remainders;
+    min-factor = <800>;
+    max-factor = <2500>;
+    speed-threshold = <1500>;
+    speed-max = <6000>;
+    acceleration-exponent = <2>;
 };
 
 &default_transform {
@@ -32,17 +52,16 @@
             ;
 };
 
-
 &pinctrl {
-    spi0_default: spi0_default {    //通常時(SPI通信中)のピン構成
+    spi0_default: spi0_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>, //P0.05を指定(SCLK)
-                <NRF_PSEL(SPIM_MOSI, 0, 4)>,    //P0.04を指定(SDIOだからMOSI,MISO両方の役割を担う)
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
     };
 
-    spi0_sleep: spi0_sleep {    //スリープ時のピン構成(省電力)
+    spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
@@ -52,104 +71,81 @@
     };
 };
 
-
 &spi0 {
     status = "okay";
-    compatible = "nordic,nrf-spim"; //マイコンがnRFシリーズ
+    compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;  //P0.09を指定(CS)
+    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball_central: trackball_central@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
+        compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
+        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <800>;
-        //swap-xy;
-        invert-x; //COROPIT版ではコメントアウトを外す
-        //invert-y; //COROPIT版ではコメントアウトを外す
+        invert-x;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        force-awake; // ZMKがアクティブな間センサーを起きたままにする
+        force-awake;
     };
 };
 
 &zip_temp_layer {
     excluded-positions = <10 17 18 19 21 29 31>;
-    require-prior-idle-ms = <300>;  // 好きなmsに調整（例: 300ms）
+    require-prior-idle-ms = <300>;
 };
 
-// Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
 
-// 入力チェーンの先頭に &pointer_accel を追加
-    input-processors = <
-        &pointer_accel
-        &zip_temp_layer 8 10000>;
+    input-processors = <&pointer_accel &zip_temp_layer 8 10000>;
 
-    //input-processors = <&zip_temp_layer 8 10000>; //無効
-
-// レイヤー2のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
-        input-processors = 
-            <&zip_temp_layer 8 10000>, // オートマウスの設定を引き継ぐ
-            <&zip_xy_scaler 1 3>;       // カーソル移動量を1/3倍（3倍遅く）にする
+        input-processors = <&zip_temp_layer 8 10000>, <&zip_xy_scaler 1 3>;
     };
 
     scroller {
         layers = <9>;
-        input-processors = 
-            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
+                           <&zip_xy_to_scroll_mapper>,
+                           <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+                           <&zip_scroll_scaler 1 16>;
     };
 
-// レイヤー10のときにY軸反転スクロール
     scroller_reverse {
         layers = <10>;
-        input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
-            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_scroll_scaler 1 16>;
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
+                           <&zip_xy_to_scroll_mapper>,
+                           <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+                           <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
+                           <&zip_scroll_scaler 1 16>;
     };
 
-// レイヤー11用のジェスチャー設定
+    // レイヤー11用のジェスチャー設定（デフォルト処理と結合）
     gest_on_l1 {
         layers = <11>;
-        input-processors = <&zip_mouse_gesture_l1>;
-        //input-processors = <&zip_mouse_gesture_l1 &zip_xy_scaler 0 1>;
-
+        input-processors = <&pointer_accel &zip_temp_layer 8 10000 &zip_mouse_gesture_l1>;
     };
 
-        gest_on_l2 {
-            layers = <12>;
-            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
-        };
-
+    gest_on_l2 {
+        layers = <12>;
+        input-processors = <&pointer_accel &zip_temp_layer 8 10000 &zip_mouse_gesture_l2>;
+    };
 };
 
-
-// レイヤーリスナー（ジェスチャーのON/OFF切り替え用）
 / {
     layer_listeners {
         compatible = "zmk,layer-listeners";
-
         gesture_on_l1 {
             layers = <11>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
-
         gesture_on_l2 {
             layers = <12>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
