@@ -400,8 +400,7 @@
     // ★左ジェスチャーの挙動をレイヤーごとに分岐
     prev_tab   { 
         pattern = <GESTURE_LEFT>; [cite: 96]
-        bindings = <&kp LC(LS(TAB))>, // 通常（レイヤー11など）は「前のタブ」 [cite: 96]
-                   <&none>;           // レイヤー12のときは「何も送信しない」
+         bindings = <&kp LC(LS(TAB))>, <&none>;          // レイヤー12のときは「何も送信しない」
     };
 
     next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; }; [cite: 97]
