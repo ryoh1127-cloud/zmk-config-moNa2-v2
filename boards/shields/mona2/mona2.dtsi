@@ -3,9 +3,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <physical_layouts.dtsi>
 
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <mouse-gesture.dtsi>   /* kot149 モジュール */
-
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
@@ -88,28 +85,13 @@
                 ;
     };
 
-    //right hand trackball
+  // right hand trackball
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&pmw3610>;
-
-        gest_on_l1 {
-            layers = <11>;
-            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-        };
+        status = "disabled";
+        input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;         //Y軸反転
     };
-
-layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        // Layer 11 に入ったらジェスチャーON、抜けたらOFF
-        gesture_on_l1 {
-            layers = <11>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-    };
-
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
