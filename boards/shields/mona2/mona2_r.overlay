@@ -88,6 +88,8 @@
     status = "okay";
     device = <&trackball_central>;
 
+input-processors = <&zip_mouse_gesture_l1>;
+
 // 入力チェーンの先頭に &pointer_accel を追加
     input-processors = <
         &pointer_accel
