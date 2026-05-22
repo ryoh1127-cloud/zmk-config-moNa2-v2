@@ -12,4 +12,5 @@
     next_tab    { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     }; // 次のタブ
     Create_tab  { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>;      }; // タブを作成
     close_tab   { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>;       }; // タブを閉じる
+  };
 };
