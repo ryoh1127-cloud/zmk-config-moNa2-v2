@@ -287,7 +287,7 @@
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none          &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
 &kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                   &none   &kp SEMICOLON  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp LSHIFT        &kp GRAVE          &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON      &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
+&kp LSHIFT        &kp GRAVE          &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON      &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LSHFT
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
@@ -298,7 +298,7 @@
             bindings = <
 &kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &none             &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
 &kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none   &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LS(0x89)
-&kp LSHIFT        &kp LEFT_BRACE  &none            &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
+&kp LSHIFT        &kp LEFT_BRACE  &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
 &trans            &trans          &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
@@ -396,9 +396,24 @@
     movement-threshold = <6>;
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
-        
-        prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
-        next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
-        Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
-        close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
+
+    prev_tab {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LC(LS(TAB))>;
+    };
+
+    next_tab {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LC(TAB)>;
+    };
+
+    Create_tab {
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LG(T)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(W)>;
+    };
 };
