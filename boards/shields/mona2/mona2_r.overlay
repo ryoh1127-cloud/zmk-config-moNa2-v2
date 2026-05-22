@@ -132,9 +132,10 @@
 // =========================================================================
 };
 / {
-    // レイヤー12用のマウスジェスチャーノードをルート直下に新設
+    // レイヤー12用のマウスジェスチャーノード（修正版）
     zip_mouse_gesture_l12: zip_mouse_gesture_l12 {
         compatible = "zmk,mouse-gesture";
+        status = "okay";
         #input-processor-cells = <0>;
     };
 };
