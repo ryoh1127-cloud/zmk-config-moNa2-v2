@@ -93,19 +93,6 @@
         &pointer_accel
         &zip_temp_layer 8 10000>;
 
-// レイヤー11用（ジェスチャー）
-    gest_on_l1 {
-        layers = <11>;
-        /* 基本の設定に加え、ジェスチャーを追加する */
-        input-processors = <&zip_mouse_gesture_l1>;
-    };
-
-    // レイヤー12用
-    gest_on_l2 {
-        layers = <12>;
-        input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
-    };
-
     //input-processors = <&zip_temp_layer 8 10000>; //無効
 
 // レイヤー2のときだけカーソルを遅くする設定
@@ -139,20 +126,22 @@
 
 };
 
-
-// レイヤーリスナー（ジェスチャーのON/OFF切り替え用）
 / {
     layer_listeners {
         compatible = "zmk,layer-listeners";
 
+        /* レイヤー11: ジェスチャー有効化 */
         gesture_on_l1 {
             layers = <11>;
+            input-processors = <&zip_mouse_gesture_l1 &zip_xy_scaler 0 1>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
 
+        /* レイヤー12: ジェスチャー有効化 */
         gesture_on_l2 {
             layers = <12>;
+            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
-   };
+    };
 };
