@@ -5,6 +5,37 @@
 #include <behaviors/input_gestures_accel.dtsi>
 #include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
+
+// レイヤー11用のジェスチャー設定
+    gest_on_l1 {
+        layers = <11>;
+        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+    };
+
+        gest_on_l2 {
+            layers = <12>;
+            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
+        };
+
+};
+
+
+// レイヤーリスナー（ジェスチャーのON/OFF切り替え用）
+/ {
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture_on_l1 {
+            layers = <11>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        gesture_on_l2 {
+            layers = <12>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
+
 // =========================================================================
 // ★追加：加速度（アクセラレーション）のカーブ設定
 // =========================================================================
@@ -125,33 +156,4 @@
     };
 
 
-// レイヤー11用のジェスチャー設定
-    gest_on_l1 {
-        layers = <11>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-    };
-
-        gest_on_l2 {
-            layers = <12>;
-            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
-        };
-
-};
-
-
-// レイヤーリスナー（ジェスチャーのON/OFF切り替え用）
-/ {
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        gesture_on_l1 {
-            layers = <11>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-
-        gesture_on_l2 {
-            layers = <12>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-    };
 };
