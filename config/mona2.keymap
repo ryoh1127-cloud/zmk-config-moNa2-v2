@@ -390,21 +390,15 @@
 };
 
 &zip_mouse_gesture {
-    enable-eager-mode; [cite: 96]
-    always-active; [cite: 96]
-    stroke-size = <5>; [cite: 96]
-    movement-threshold = <6>; [cite: 96]
-    idle-timeout-ms = <100>; [cite: 96]
-    gesture-cooldown-ms = <120>; [cite: 96]
+    enable-eager-mode;
+    always-active;
+    stroke-size = <5>;
+    movement-threshold = <6>;
+    idle-timeout-ms = <100>;
+    gesture-cooldown-ms = <120>;
         
-    // ★左ジェスチャーの挙動をレイヤーごとに分岐
-    prev_tab   { 
-        pattern = <GESTURE_LEFT>; [cite: 96]
-         bindings = <&kp LC(LS(TAB))>, <&none>;          // レイヤー12のときは「何も送信しない」
-    };
-
-    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; }; [cite: 97]
-    Create_tab { pattern = <GESTURE_UP>; [cite: 97]
-                 bindings = <&kp LG(T)>; }; [cite: 98]
-    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; }; [cite: 98]
+        prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+        next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+        Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+        close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 };
