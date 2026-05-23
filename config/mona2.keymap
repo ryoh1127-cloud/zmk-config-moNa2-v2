@@ -78,13 +78,13 @@
         Layer9_mac {
             bindings = <&mo 9>;
             key-positions = <18 19>;
-            layers = <0>;
+            layers = <0 8>;
         };
 
         Layer10_win {
             bindings = <&mo 10>;
             key-positions = <18 19>;
-            layers = <1>;
+            layers = <1 8>;
         };
 
         Layer13 {
@@ -96,13 +96,13 @@
         copy_mac {
             bindings = <&kp LG(C)>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <0 8>;
         };
 
         paste_mac {
             bindings = <&kp LG(V)>;
             key-positions = <29 30>;
-            layers = <0>;
+            layers = <0 8>;
         };
     };
 
