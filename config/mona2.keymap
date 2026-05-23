@@ -2,13 +2,14 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <mouse-gesture.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-// #include "gesture/gesture_L1.dtsi"
-// #include "gesture/gesture_L2.dtsi"
 
+//#include "gesture/gesture_L1.dtsi"
+//#include "gesture/gesture_L2.dtsi"
 //#include "gesture/gesture_L3.dtsi"
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
@@ -362,7 +363,7 @@
         Gesture_L1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp A             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
@@ -388,16 +389,16 @@
     };
 };
 
-// Mac用ジェスジャー
 &zip_mouse_gesture {
     enable-eager-mode;
+    always-active;
     stroke-size = <5>;
     movement-threshold = <6>;
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
-
-    prev_tab    { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; }; // 前のタブ
-    next_tab    { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     }; // 次のタブ
-    Create_tab  { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>;      }; // タブを作成
-    close_tab   { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>;       }; // タブを閉じる
+        
+        prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+        next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>; };
+        Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>; };
+        close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>; };
 };
