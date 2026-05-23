@@ -137,13 +137,19 @@ gesture_l11 {
     };
 };
 
-// それぞれのインスタンスを実体化させるための記述
-zip_mouse_gesture_1: zip_mouse_gesture_1 {
-    compatible = "zmk,input-processor-mouse-gesture";
-};
-zip_mouse_gesture_2: zip_mouse_gesture_2 {
-    compatible = "zmk,input-processor-mouse-gesture";
-};
-zip_mouse_gesture_3: zip_mouse_gesture_3 {
-    compatible = "zmk,input-processor-mouse-gesture";
+/ {
+    /* 既存の記述をここにすべて含めるか、
+       あるいは一番下のインスタンス定義だけをここに移動してください */
+
+    zip_mouse_gesture_1: zip_mouse_gesture_1 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+
+    zip_mouse_gesture_2: zip_mouse_gesture_2 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+
+    zip_mouse_gesture_3: zip_mouse_gesture_3 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
 };
