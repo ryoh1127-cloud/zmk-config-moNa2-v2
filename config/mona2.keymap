@@ -55,16 +55,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Gesture_L8 {
-            bindings = <&lt 12 LA(TAB)>;
-            key-positions = <8 9>;
-        };
-
-        Gesture_L9 {
-            bindings = <&lt 13 LEFT_WIN>;
-            key-positions = <19 20>;
-        };
-
         a {
             bindings = <&none>;
             key-positions = <17 29 18 19 31 10 21>;
@@ -105,6 +95,12 @@
         copy_mac {
             bindings = <&kp LG(C)>;
             key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        paste_mac {
+            bindings = <&kp LG(V)>;
+            key-positions = <29 30>;
             layers = <0>;
         };
     };
