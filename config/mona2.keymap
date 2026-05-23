@@ -415,7 +415,6 @@
     gesture-cooldown-ms = <120>;
 
     // L11用のパターン
-   layers = <11>;
     prev_tab_l11 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LS(TAB))>;
@@ -437,7 +436,6 @@
     };
 
     // L12用のパターン
-    layers = <12>;
     prev_tab_l12 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LS(TAB))>;
@@ -459,7 +457,6 @@
     };
 
     // L13用のパターン(ウィンドウ操作_Mac)
-    layers = <13>;
     vdesk_prev_13 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LEFT)>;
