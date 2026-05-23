@@ -371,6 +371,16 @@ path.combo {
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">10</text>
 </a></g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
+<text x="672" y="28" class="combo tap">Gui+TAB</text>
+<a href="#Gesture_L3">
+<text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
+</a></g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
+<text x="560" y="84" class="combo tap">Gui+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-default_layer_Win">

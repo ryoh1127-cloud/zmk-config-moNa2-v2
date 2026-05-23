@@ -577,3 +577,9 @@ combos:
   l: [default]
 - p: [18, 19]
   k: '10'
+- p: [8, 9]
+  k: {t: Gui+TAB, h: Gesture_L3}
+  l: [default]
+- p: [17, 18]
+  k: Gui+C
+  l: [default]
