@@ -127,14 +127,25 @@
 // レイヤーごとのジェスチャー有効設定
     gesture_l11 {
         layers = <11>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture_1 &zip_xy_scaler 0 1>;
     };
     gesture_l12 {
         layers = <12>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture_2 &zip_xy_scaler 0 1>;
     };
     gesture_l13 {
         layers = <13>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture_3 &zip_xy_scaler 0 1>;
     };
+};
+
+// それぞれのインスタンスを実体化させるための記述
+zip_mouse_gesture_1: zip_mouse_gesture_1 {
+    compatible = "zmk,input-processor-mouse-gesture";
+};
+zip_mouse_gesture_2: zip_mouse_gesture_2 {
+    compatible = "zmk,input-processor-mouse-gesture";
+};
+zip_mouse_gesture_3: zip_mouse_gesture_3 {
+    compatible = "zmk,input-processor-mouse-gesture";
 };
