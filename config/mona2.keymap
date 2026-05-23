@@ -88,6 +88,12 @@
         Layer9 {
             bindings = <&mo 9>;
             key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        Layer10 {
+            bindings = <&mo 10>;
+            key-positions = <18 19>;
         };
     };
 
@@ -263,10 +269,10 @@
 
         layer_2 {
             bindings = <
-&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp PG_UP           &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN
-&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)
-&trans       &trans    &trans        &trans           &trans                                  &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))  &kp LG(W)       &kp LC(TAB)      &trans
-&trans       &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                                &kp LG(LS(NUMBER_4))
+&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp PG_UP        &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp PAGE_DOWN
+&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp LC(A)        &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
+&trans       &trans    &trans        &trans           &trans                                  &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac  &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
+&trans       &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                                    &kp LG(LS(NUMBER_4))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -349,7 +355,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_13 {
+        layer_10 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
@@ -444,18 +450,22 @@
     };
 
     // L13用のパターン(ウィンドウ操作_Mac)
+
     vdesk_prev_13 {
-        pattern = <GESTURE_LEFT>; 
+        pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LEFT)>;
     };
+
     vdesk_next_13 {
         pattern = <GESTURE_RIGHT>;
         bindings = <&kp LC(RIGHT)>;
     };
+
     task_view_13 {
         pattern = <GESTURE_UP>;
         bindings = <&kp LC(UP)>;
     };
+
     vdesk_send_next_13 {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(LC(LS(RIGHT)))>;
