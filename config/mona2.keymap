@@ -85,15 +85,21 @@
             key-positions = <22 23>;
         };
 
-        Layer9 {
+        Layer9_mac {
             bindings = <&mo 9>;
             key-positions = <18 19>;
             layers = <0>;
         };
 
-        Layer10 {
+        Layer10_win {
             bindings = <&mo 10>;
             key-positions = <18 19>;
+        };
+
+        Layer13 {
+            bindings = <&lt 13 LG(TAB)>;
+            key-positions = <8 9>;
+            layers = <0>;
         };
     };
 
