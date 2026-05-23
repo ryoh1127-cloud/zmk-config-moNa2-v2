@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: SCROLL}
+  - {t: '-', h: Gesture_L1}
   - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
   - X
   - C
@@ -52,7 +52,7 @@ layers:
   - Y
   - U
   - I
-  - O
+  - {t: O, h: '13'}
   - {t: P, h: '13'}
   - {t: '&kp_exit_AML A', h: LCTRL}
   - S
@@ -396,8 +396,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
