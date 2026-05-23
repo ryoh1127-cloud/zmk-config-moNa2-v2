@@ -445,8 +445,8 @@
 
     // L13用のパターン(ウィンドウ操作_Mac)
     vdesk_prev_13 {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp (LC(LEFT)>;
+        pattern = <GESTURE_LEFT>; 
+        bindings = <&kp LC(LEFT)>;
     };
     vdesk_next_13 {
         pattern = <GESTURE_RIGHT>;
