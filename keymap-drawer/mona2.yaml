@@ -34,7 +34,7 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - ESC
+  - {t: ESC, h: LCTRL}
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT GUI}
