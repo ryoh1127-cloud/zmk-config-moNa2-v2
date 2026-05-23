@@ -548,14 +548,12 @@
         pattern = <GESTURE_RIGHT>;
         bindings = <&kp LG(V)>;
     };
-
     focus_url_15 {
         pattern = <GESTURE_UP>;
         bindings = <&kp LG(L)>;
     };
-
     search_15 {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(space)>;
+        bindings = <&kp LG(SPACE)>;
     };
 };
