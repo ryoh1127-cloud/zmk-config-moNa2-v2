@@ -52,8 +52,8 @@ layers:
   - Y
   - U
   - I
-  - {t: O, h: '13'}
-  - {t: P, h: '13'}
+  - {t: O, h: '10'}
+  - {t: P, h: '10'}
   - {t: '&kp_exit_AML A', h: LCTRL}
   - S
   - D
@@ -64,7 +64,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: '13'}
+  - {t: '-', h: '10'}
   - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
   - X
   - C
@@ -93,9 +93,9 @@ layers:
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
   - PG UP
-  - Ctl+Sft+TAB
+  - Ctl+LEFT ARROW
   - UP ARROW
-  - Ctl+TAB
+  - Ctl+RIGHT ARROW
   - PAGE DOWN
   - HOME
   - LEFT
@@ -103,11 +103,11 @@ layers:
   - {t: RIGHT ARROW, type: held}
   - AC DESKTOP SHOW ALL APPLICATIONS
   - Ctl+Gui+PRINTSCREEN
-  - Gui+LEFT ARROW
+  - Ctl+A
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - Gui+RIGHT ARROW
+  - Ctl+E
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -387,7 +387,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '13':
+  '10':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -574,3 +574,6 @@ combos:
   k: F10
 - p: [18, 19]
   k: SCROLL
+  l: [default]
+- p: [18, 19]
+  k: '10'
