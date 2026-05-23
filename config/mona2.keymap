@@ -444,9 +444,20 @@
     };
 
     // L13用のパターン(ウィンドウ操作_Mac)
-    vdesk_prev_13       { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LEFT)>;     };
-    vdesk_next_13       { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(RIGHT)>;    };
-    task_view_13        { pattern = <GESTURE_UP>;    bindings = <&kp LC(UP)>;          };
-    vdesk_send_next_13  { pattern = <GESTURE_DOWN>; bindings = <&kp LG(LC(LS(RIGHT)))>; };
-  };
+    vdesk_prev_13 {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp (LC(LEFT)>;
+    };
+    vdesk_next_13 {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LC(RIGHT)>;
+    };
+    task_view_13 {
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LC(UP)>;
+    };
+    vdesk_send_next_13 {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(LC(LS(RIGHT)))>;
+    };
 };
