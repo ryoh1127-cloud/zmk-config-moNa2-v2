@@ -400,41 +400,27 @@
     gesture-cooldown-ms = <120>;
 
     // L11用のパターン
-
     prev_tab_l11 {
         pattern = <GESTURE_LEFT>;
-
-        　
-
-        bindings = <&kp LC(LS(TAB))>;
+        bindings = &kp LC(LS(TAB))>;
     };
 
     next_tab_l11 {
         pattern = <GESTURE_RIGHT>;
-
-        　
-
         bindings = <&kp LC(TAB)>;
     };
 
     Create_tab_l11 {
         pattern = <GESTURE_UP>;
-
-        　
-
         bindings = <&kp LG(T)>;
     };
 
     close_tab_l11 {
         pattern = <GESTURE_DOWN>;
-
-        　
-
         bindings = <&kp LG(W)>;
     };
 
     // L12用のパターン
-
     prev_tab_l12 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LS(TAB))>;
