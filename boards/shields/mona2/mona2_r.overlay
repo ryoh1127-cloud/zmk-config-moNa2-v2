@@ -87,14 +87,14 @@
     status = "okay";
     device = <&trackball_central>;
 
-// ★変更：入力チェーンの先頭に &pointer_accel を追加
+// 入力チェーンの先頭に &pointer_accel を追加
     input-processors = <
         &pointer_accel
         &zip_temp_layer 8 10000>;
 
-    //input-processors = <&zip_temp_layer 8 10000>; //無効
+    //input-processors = <&zip_temp_layer 8 10000>; //加速度追加のため無効
 
-// ★追加：レイヤー2のときだけカーソルを遅くする設定
+// レイヤー2のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
         input-processors = 
@@ -111,7 +111,8 @@
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
     };
-// レイヤー10のときにY軸反転スクロール
+
+// レイヤー10のときにY軸反転スクロール(Windows用)
     scroller_reverse {
         layers = <10>;
         input-processors = 
@@ -121,9 +122,9 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-// =========================================================================
-// レイヤー11のときにジェスチャーを有効にする
-// =========================================================================
+
+
+// レイヤーごとのジェスチャー有効設定
     gesture_l11 {
         layers = <11>;
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
@@ -132,5 +133,4 @@
         layers = <12>;
         input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
     };
-// =========================================================================
 };
