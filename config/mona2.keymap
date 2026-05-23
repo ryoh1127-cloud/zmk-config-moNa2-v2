@@ -84,6 +84,7 @@
         Layer10_win {
             bindings = <&mo 10>;
             key-positions = <18 19>;
+            layers = <1>;
         };
 
         Layer13 {
@@ -377,7 +378,7 @@
         Gesture_L1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp A             &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
