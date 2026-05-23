@@ -109,7 +109,7 @@ gesture_l11 {
     };
     gesture_l16 {
         layers = <16>;
-        input-processors = <&zip_mouse_gesture_l6 &zip_xy_scaler 0 1>;
+        input-processors = <&zip_mouse_gesture_6 &zip_xy_scaler 0 1>;
     };
 
 // 入力チェーンの先頭に &pointer_accel を追加
