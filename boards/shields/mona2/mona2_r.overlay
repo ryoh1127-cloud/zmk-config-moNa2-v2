@@ -100,6 +100,10 @@
             input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
         };
 
+        gest_on_l2 {
+            layers = <12>;
+            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
+        };
 
 
 // レイヤー2のときだけカーソルを遅くする設定
