@@ -10,8 +10,8 @@ layers:
   - U
   - I
   - {t: O, h: SCROLL}
-  - {t: P, h: Gesture_L1}
-  - {t: '&kp_exit_AML A', h: LEFT GUI}
+  - P
+  - {t: A, h: LEFT GUI}
   - S
   - D
   - {t: F, h: '2'}
@@ -22,7 +22,7 @@ layers:
   - K
   - L
   - {t: '-', h: Gesture_L1}
-  - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
@@ -53,8 +53,8 @@ layers:
   - U
   - I
   - {t: O, h: '10'}
-  - {t: P, h: '10'}
-  - {t: '&kp_exit_AML A', h: LCTRL}
+  - P
+  - {t: A, h: LCTRL}
   - S
   - D
   - {t: F, h: '3'}
@@ -64,8 +64,8 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: '10'}
-  - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
+  - {t: '-', h: Gesture_L2}
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
@@ -440,7 +440,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -451,7 +451,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -494,7 +494,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -525,19 +525,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -570,16 +570,16 @@ combos:
   k: F10
 - p: [18, 19]
   k: SCROLL
-  l: [default, '5']
+  l: [default]
 - p: [18, 19]
   k: '10'
-  l: [default_layer_Win, '5']
-- p: [8, 9]
+  l: [default_layer_Win]
+- p: [19, 20]
   k: {t: Gui+TAB, h: Gesture_L3}
   l: [default]
 - p: [17, 18]
   k: Gui+C
-  l: [default, '5']
+  l: [default]
 - p: [29, 30]
   k: Gui+V
-  l: [default, '5']
+  l: [default]
