@@ -25,4 +25,13 @@
     zip_mouse_gesture_3: zip_mouse_gesture_3 {
         compatible = "zmk,input-processor-mouse-gesture";
     };
+    zip_mouse_gesture_4: zip_mouse_gesture_4 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+    zip_mouse_gesture_5: zip_mouse_gesture_5 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+    zip_mouse_gesture_6: zip_mouse_gesture_6 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
 };
