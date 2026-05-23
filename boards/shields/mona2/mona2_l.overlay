@@ -14,3 +14,15 @@
 &left_encoder {
     status = "okay";
 };
+/* mona2_l.overlay の一番下にこれを追加 */
+/ {
+    zip_mouse_gesture_1: zip_mouse_gesture_1 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+    zip_mouse_gesture_2: zip_mouse_gesture_2 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+    zip_mouse_gesture_3: zip_mouse_gesture_3 {
+        compatible = "zmk,input-processor-mouse-gesture";
+    };
+};
