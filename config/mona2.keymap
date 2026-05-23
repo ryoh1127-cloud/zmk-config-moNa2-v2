@@ -404,7 +404,7 @@
     };
 };
 
-// ジェスチャー設定
+// ジェスチャー設定 
 
 &zip_mouse_gesture {
     enable-eager-mode;
