@@ -99,6 +99,14 @@ gesture_l11 {
         layers = <13>;
         input-processors = <&zip_mouse_gesture_3  &zip_xy_scaler 0 1>;
     };
+    gesture_l14 {
+        layers = <14>;
+        input-processors = <&zip_mouse_gesture_4  &zip_xy_scaler 0 1>;
+    };
+    gesture_l15 {
+        layers = <15>;
+        input-processors = <&zip_mouse_gesture_5  &zip_xy_scaler 0 1>;
+    };
 
 // 入力チェーンの先頭に &pointer_accel を追加
     input-processors = <
@@ -155,4 +163,14 @@ gesture_l11 {
         compatible = "zmk,input-processor-mouse-gesture";
         #input-processor-cells = <0>;
     };
+    zip_mouse_gesture_4: zip_mouse_gesture_4 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+    };
+
+    zip_mouse_gesture_5: zip_mouse_gesture_5 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+    };
+
 };
