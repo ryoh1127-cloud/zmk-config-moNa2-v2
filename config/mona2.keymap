@@ -461,13 +461,13 @@
         bindings = <&kp LC(RIGHT)>;
     };
 
-    task_view_13 {
+    view_window_13 {
         pattern = <GESTURE_UP>;
         bindings = <&kp LC(UP)>;
     };
 
-    vdesk_send_next_13 {
+    view_application_13 {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(LC(LS(RIGHT)))>;
+        bindings = <&kp LC(DOWN)>;
     };
 };
