@@ -38,7 +38,7 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT GUI}
-  - {t: Sft+SPACE, h: '4'}
+  - {t: SPACE, h: '4'}
   - '&eisu_kana'
   - BACKSPACE
   - {t: ENTER, h: '2'}
@@ -570,16 +570,16 @@ combos:
   k: F10
 - p: [18, 19]
   k: SCROLL
-  l: [default]
+  l: [default, '5']
 - p: [18, 19]
   k: '10'
-  l: [default_layer_Win]
+  l: [default_layer_Win, '5']
 - p: [8, 9]
   k: {t: Gui+TAB, h: Gesture_L3}
   l: [default]
 - p: [17, 18]
   k: Gui+C
-  l: [default]
+  l: [default, '5']
 - p: [29, 30]
   k: Gui+V
-  l: [default]
+  l: [default, '5']
