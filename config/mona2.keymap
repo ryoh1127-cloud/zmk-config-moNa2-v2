@@ -402,7 +402,7 @@
     // L11用のパターン
     prev_tab_l11 {
         pattern = <GESTURE_LEFT>;
-        bindings = &kp LC(LS(TAB))>;
+        bindings = <&kp LC(LS(TAB))>;
     };
 
     next_tab_l11 {
