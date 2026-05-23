@@ -387,3 +387,17 @@
         };
     };
 };
+
+// Mac用ジェスジャー
+&zip_mouse_gesture {
+    enable-eager-mode;
+    stroke-size = <5>;
+    movement-threshold = <6>;
+    idle-timeout-ms = <100>;
+    gesture-cooldown-ms = <120>;
+
+    prev_tab    { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; }; // 前のタブ
+    next_tab    { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     }; // 次のタブ
+    Create_tab  { pattern = <GESTURE_UP>;    bindings = <&kp LG(T)>;      }; // タブを作成
+    close_tab   { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(W)>;       }; // タブを閉じる
+};
