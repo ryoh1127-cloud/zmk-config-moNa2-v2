@@ -3,7 +3,6 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
-#include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
 // =========================================================================
 // ★追加：加速度（アクセラレーション）のカーブ設定
@@ -88,16 +87,14 @@
     status = "okay";
     device = <&trackball_central>;
 
-// 入力チェーンの先頭に &pointer_accel を追加
-    // input-processors = <
-        // &pointer_accel
-        // &zip_temp_layer 8 10000>;
+// ★変更：入力チェーンの先頭に &pointer_accel を追加
+    input-processors = <
+        &pointer_accel
+        &zip_temp_layer 8 10000>;
 
-    input-processors = <&zip_temp_layer 8 10000>; //無効
+    //input-processors = <&zip_temp_layer 8 10000>; //無効
 
-
-
-// レイヤー2のときだけカーソルを遅くする設定
+// ★追加：レイヤー2のときだけカーソルを遅くする設定
     snipe_mode {
         layers = <4 5>;
         input-processors = 
@@ -114,7 +111,6 @@
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
     };
-
 // レイヤー10のときにY軸反転スクロール
     scroller_reverse {
         layers = <10>;
@@ -125,10 +121,12 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
-
-        gest_on_l1 {
-            layers = <11>;
-            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-        };
-
+// =========================================================================
+// レイヤー11のときにジェスチャーを有効にする
+// =========================================================================
+    mouse_gesture_mode {
+        layers = <11>;
+        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+    };
+// =========================================================================
 };
