@@ -107,6 +107,10 @@ gesture_l11 {
         layers = <15>;
         input-processors = <&zip_mouse_gesture_5  &zip_xy_scaler 0 1>;
     };
+    gesture_l16 {
+        layers = <16>;
+        input-processors = <&zip_mouse_gesture_l6 &zip_xy_scaler 0 1>;
+    };
 
 // 入力チェーンの先頭に &pointer_accel を追加
     input-processors = <
@@ -146,8 +150,7 @@ gesture_l11 {
 };
 
 / {
-    /* 既存の記述をここにすべて含めるか、
-       あるいは一番下のインスタンス定義だけをここに移動してください */
+    /* 左手側にも追加が必要 */
 
     zip_mouse_gesture_1: zip_mouse_gesture_1 {
         compatible = "zmk,input-processor-mouse-gesture";
@@ -169,6 +172,10 @@ gesture_l11 {
     };
 
     zip_mouse_gesture_5: zip_mouse_gesture_5 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+    };
+    zip_mouse_gesture_6: zip_mouse_gesture_6 {
         compatible = "zmk,input-processor-mouse-gesture";
         #input-processor-cells = <0>;
     };
