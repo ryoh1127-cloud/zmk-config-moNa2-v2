@@ -135,22 +135,3 @@
             <&zip_scroll_scaler 1 16>;
     };
 };
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        // Layer 7 に入ったらジェスチャーON、抜けたらOFF
-        gesture_on_l1 {
-            layers = <11>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-
-        gesture_on_l2 {
-            layers = <12>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-
-        // gesture_on_l3 {
-            // layers = <13>;
-            // bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        // };
-    };
