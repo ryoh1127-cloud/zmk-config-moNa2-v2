@@ -414,9 +414,8 @@
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
 
-// レイヤー11用エンジン
-&zip_mouse_gesture_l11 {
-    compatible = "zmk,input-processor-mouse-gesture";
+  // L11用のパターン
+layers = <11>; // このレイヤーでのみ有効
     prev_tab_l11 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LS(TAB))>;
@@ -437,9 +436,8 @@
         bindings = <&kp LG(W)>;
     };
 
-// レイヤー12用エンジン
-&zip_mouse_gesture_l12 {
-    compatible = "zmk,input-processor-mouse-gesture";
+    // L12用のパターン
+layers = <12>; // このレイヤーでのみ有効
     prev_tab_l12 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LS(TAB))>;
@@ -460,9 +458,8 @@
         bindings = <&kp LC(W)>;
     };
 
-// レイヤー13用エンジン
-&zip_mouse_gesture_l13 {
-    compatible = "zmk,input-processor-mouse-gesture";
+    // L13用のパターン(ウィンドウ操作_Mac)
+layers = <13>; // このレイヤーでのみ有効
     vdesk_prev_13 {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(LEFT)>;
