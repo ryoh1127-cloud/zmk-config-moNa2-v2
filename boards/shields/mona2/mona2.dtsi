@@ -98,43 +98,8 @@
         // device = <&pmw3610_tb>;
         // input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;         //Y軸反転
-
-        gest_on_l1 {
-            layers = <11>;
-            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-        };
-
-        gest_on_l2 {
-            layers = <12>;
-            input-processors = <&zip_mouse_gesture_l2 &zip_xy_scaler 0 1>;
-        };
-
-        // gest_on_l3 {
-            // layers = <13>;
-            // input-processors = <&zip_mouse_gesture_l3 &zip_xy_scaler 0 1>;
-        // };
-
     };
-
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        // Layer 7 に入ったらジェスチャーON、抜けたらOFF
-        gesture_on_l1 {
-            layers = <11>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-
-        gesture_on_l2 {
-            layers = <12>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-
-        // gesture_on_l3 {
-            // layers = <13>;
-            // bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        // };
-    };
+    
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
