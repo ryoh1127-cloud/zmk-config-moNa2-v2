@@ -78,31 +78,31 @@
         Layer9_mac {
             bindings = <&mo 9>;
             key-positions = <18 19>;
-            layers = <0 8>;
+            layers = <0>;
         };
 
         Layer10_win {
             bindings = <&mo 10>;
             key-positions = <18 19>;
-            layers = <1 8>;
+            layers = <1>;
         };
 
         Layer13 {
             bindings = <&lt 13 LG(TAB)>;
-            key-positions = <8 9>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
         copy_mac {
             bindings = <&kp LG(C)>;
             key-positions = <17 18>;
-            layers = <0 8>;
+            layers = <0>;
         };
 
         paste_mac {
             bindings = <&kp LG(V)>;
             key-positions = <29 30>;
-            layers = <0 8>;
+            layers = <0>;
         };
     };
 
@@ -256,10 +256,10 @@
 
         default_layer {
             bindings = <
-&kp Q                             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &lt 9 O  &lt 11 P
-&mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &lt 2 F             &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 11 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&mt LCTRL ESC                     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 7 ESCAPE
+&kp Q             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &lt 9 O  &kp P
+&mt LEFT_GUI A    &kp S         &kp D         &lt 2 F             &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 11 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 7 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -267,10 +267,10 @@
 
         default_layer_Win {
             bindings = <
-&kp Q                             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &lt 10 O  &lt 10 P
-&mt_exit_AML_on_tap LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L     &lt 10 MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&mt LCTRL ESC                     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                              &lt 7 ESC
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &lt 10 O  &kp P
+&mt LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L     &lt 12 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                              &lt 7 ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
