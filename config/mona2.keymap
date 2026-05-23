@@ -259,7 +259,7 @@
 &kp Q                             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I      &lt 9 O  &lt 11 P
 &mt_exit_AML_on_tap LEFT_GUI A    &kp S         &kp D         &lt 2 F             &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &lt 11 MINUS
 &mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC                           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 7 ESCAPE
+&mt LCTRL ESC                     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 7 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
