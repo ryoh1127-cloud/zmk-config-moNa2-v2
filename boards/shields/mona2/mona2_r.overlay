@@ -96,11 +96,6 @@
     input-processors = <&zip_temp_layer 8 10000>; //無効
 
 
-        gest_on_l1 {
-            layers = <11>;
-            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-        };
-
 
 // レイヤー2のときだけカーソルを遅くする設定
     snipe_mode {
@@ -130,4 +125,10 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
     };
+
+        gest_on_l1 {
+            layers = <11>;
+            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        };
+
 };
