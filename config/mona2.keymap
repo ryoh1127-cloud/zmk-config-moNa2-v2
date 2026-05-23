@@ -93,16 +93,10 @@
             layers = <0>;
         };
 
-        copy_mac {
-            bindings = <&kp LG(C)>;
-            key-positions = <17 18>;
-            layers = <0 8>;
-        };
-
-        paste_mac {
-            bindings = <&kp LG(V)>;
-            key-positions = <29 30>;
-            layers = <0 8>;
+        Layer15 {
+            bindings = <&mo 15>;
+            key-positions = <8 7>;
+            layers = <0>;
         };
     };
 
@@ -401,6 +395,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
+
+        layer_14 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
+
+        layer_15 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
     };
 };
 
@@ -548,10 +560,12 @@
         pattern = <GESTURE_RIGHT>;
         bindings = <&kp LG(V)>;
     };
+
     focus_url_15 {
         pattern = <GESTURE_UP>;
         bindings = <&kp LG(L)>;
     };
+
     search_15 {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(SPACE)>;
@@ -577,10 +591,12 @@
         pattern = <GESTURE_RIGHT>;
         bindings = <&kp LG(V)>;
     };
+
     focus_url_16 {
         pattern = <GESTURE_UP>;
         bindings = <&kp LG(L)>;
     };
+
     search_16 {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(SPACE)>;
