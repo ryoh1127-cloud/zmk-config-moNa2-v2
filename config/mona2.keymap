@@ -556,6 +556,8 @@
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(SPACE)>;
     };
+};
+
 // L16用のパターン ※準備中
 
 &zip_mouse_gesture_6 {
