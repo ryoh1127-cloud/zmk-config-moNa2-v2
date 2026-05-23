@@ -389,6 +389,7 @@
     };
 };
 
+// ジェスチャー設定
 &zip_mouse_gesture {
     enable-eager-mode;
     always-active;
@@ -399,23 +400,19 @@
 
 // L11用のパターン
     prev_tab_l11 {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LC(LS(TAB))>;
+        pattern = <GESTURE_LEFT>;　bindings = <&kp LC(LS(TAB))>;
     };
 
     next_tab_l11 {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(TAB)>;
+        pattern = <GESTURE_RIGHT>;　bindings = <&kp LC(TAB)>;
     };
 
     Create_tab_l11 {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LG(T)>;
+        pattern = <GESTURE_UP>;　bindings = <&kp LG(T)>;
     };
 
     close_tab_l11 {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(W)>;
+        pattern = <GESTURE_DOWN>;　bindings = <&kp LG(W)>;
     };
 
 // L12用のパターン
