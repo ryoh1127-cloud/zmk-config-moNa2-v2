@@ -91,6 +91,11 @@
             key-positions = <8 9>;
             layers = <1>;
         };
+
+        Spotlight {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
@@ -265,7 +270,7 @@
 
         layer_2 {
             bindings = <
-&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp TAB          &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LEFT_GUI
+&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &trans           &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)
 &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp LC(A)        &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
 &trans         &trans    &trans        &trans           &trans                                  &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac  &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
 &trans         &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                                    &kp LG(LS(NUMBER_4))
@@ -276,7 +281,7 @@
 
         layer_3 {
             bindings = <
-&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp LA(F4)       &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN
+&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp LA(F4)       &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(TAB)
 &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp HOME         &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
 &trans         &trans    &trans        &trans           &kp A                                   &trans    &kp LS(PRINTSCREEN)      &copy_paste_Win  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &kp LA(F4)
 &trans         &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                             &kp LG(LS(S))
