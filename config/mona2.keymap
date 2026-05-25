@@ -323,7 +323,7 @@
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
             >;
 
-            sensor-bindings = <&missioncontrol C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         layer_5 {
