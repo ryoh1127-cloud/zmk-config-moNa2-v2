@@ -89,7 +89,7 @@
 
         Layer13 {
             bindings = <&lt 13 LG(TAB)>;
-            key-positions = <19 20>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
@@ -272,7 +272,7 @@
 
         layer_2 {
             bindings = <
-&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp PG_UP        &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp PAGE_DOWN
+&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp TAB          &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LEFT_GUI
 &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp LC(A)        &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
 &trans         &trans    &trans        &trans           &trans                                  &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac  &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
 &trans         &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                                    &kp LG(LS(NUMBER_4))
