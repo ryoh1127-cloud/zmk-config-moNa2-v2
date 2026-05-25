@@ -355,9 +355,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="616" y="28" class="combo tap layer-activator">15</text>
-</a></g>
+<text x="616" y="28" class="combo tap">TAB</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-default_layer_Win">

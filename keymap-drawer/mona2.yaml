@@ -664,5 +664,5 @@ combos:
   k: {t: Gui+TAB, h: Gesture_L3}
   l: [default]
 - p: [8, 7]
-  k: '15'
+  k: TAB
   l: [default]
