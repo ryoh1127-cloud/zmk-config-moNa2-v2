@@ -705,5 +705,9 @@ combos:
 - p: [8, 9]
   k: {t: Alt+TAB, h: '14'}
   l: [default_layer_Win]
-- p: [30, 31]
+- p: [8, 7]
   k: Gui+SPACE
+  l: [default]
+- p: [8, 7]
+  k: LEFT GUI
+  l: [default_layer_Win]
