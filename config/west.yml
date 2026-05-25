@@ -16,8 +16,6 @@ manifest:
       url-base: https://github.com/oleksandrmaslov
     - name: kot149
       url-base: https://github.com/kot149
-    - name: kot149
-      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -39,9 +37,6 @@ manifest:
       remote: oleksandrmaslov
       revision: main
     - name: zmk-mouse-gesture
-      remote: kot149
-      revision: v1
-    - name: zmk-scroll-snap
       remote: kot149
       revision: v1
   self:
