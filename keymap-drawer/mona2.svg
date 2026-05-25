@@ -344,17 +344,12 @@ path.combo {
 <text x="112" y="140" class="combo tap">F10</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<a href="#SCROLL">
-<text x="616" y="84" class="combo tap layer-activator">SCROLL</text>
-</a></g>
-<g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="15" width="28" height="26" class="combo"/>
 <text x="672" y="28" class="combo tap">Gui+TAB</text>
 <a href="#Gesture_L3">
 <text x="672" y="39" class="combo hold layer-activator"><tspan style="font-size: 70%">Gesture_L3</tspan></text>
 </a></g>
-<g class="combo combopos-6">
+<g class="combo combopos-5">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <text x="616" y="84" class="combo tap">TAB</text>
 </g>
@@ -578,11 +573,6 @@ path.combo {
 <text x="112" y="140" class="combo tap">F10</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="616" y="84" class="combo tap layer-activator">10</text>
-</a></g>
-<g class="combo combopos-5">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <text x="616" y="84" class="combo tap">TAB</text>
 </g>
@@ -1447,16 +1437,6 @@ path.combo {
 <text x="112" y="140" class="combo tap">F10</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<a href="#SCROLL">
-<text x="616" y="84" class="combo tap layer-activator">SCROLL</text>
-</a></g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="616" y="84" class="combo tap layer-activator">10</text>
-</a></g>
-<g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <text x="616" y="84" class="combo tap">TAB</text>
 </g>
