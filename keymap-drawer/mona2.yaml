@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - {t: O, h: SCROLL}
-  - P
+  - {t: P, h: Gesture_L1}
   - {t: A, h: LEFT GUI}
   - S
   - D
@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: Gesture_L1}
+  - {t: LEFT GUI, h: '-'}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -53,7 +53,7 @@ layers:
   - U
   - I
   - {t: O, h: '10'}
-  - P
+  - {t: P, h: Gesture_L2}
   - {t: A, h: LCTRL}
   - S
   - D
@@ -64,7 +64,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: Gesture_L2}
+  - {t: '-', h: LEFT GUI}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -440,7 +440,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -451,7 +451,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -483,18 +483,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -663,5 +663,5 @@ combos:
 - p: [8, 9]
   k: {t: Gui+TAB, h: Gesture_L3}
   l: [default]
-- p: [8, 7]
+- p: [19, 18]
   k: TAB
