@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: LEFT GUI, h: '-'}
+  - {t: '-', h: LEFT GUI}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
