@@ -64,7 +64,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: LEFT GUI}
+  - {t: '-', h: LEFT ALT}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -135,12 +135,12 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
-  - PG UP
+  - Alt+F4
   - Ctl+Sft+TAB
   - UP ARROW
   - Ctl+TAB
   - PAGE DOWN
-  - HOME
+  - PAGE DOWN
   - LEFT
   - DOWN
   - {t: RIGHT ARROW, type: held}
