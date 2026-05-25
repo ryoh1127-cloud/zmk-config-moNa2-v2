@@ -254,7 +254,7 @@
 
         default_layer_Win {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &lt 10 O  &lt 12 P
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &lt 16 I   &lt 10 O  &lt 12 P
 &mt LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L     &mt LEFT_ALT MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                              &lt 7 ESC
@@ -406,6 +406,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
+
+        layer_16 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
     };
 };
 
@@ -536,7 +545,7 @@
 
 // L15用のパターン
 
-&zip_mouse_gesture_5 { 
+&zip_mouse_gesture_5 {
     enable-eager-mode;
     always-active;
     stroke-size = <5>;
