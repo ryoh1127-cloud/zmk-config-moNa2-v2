@@ -250,7 +250,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &kp I         &lt 9 O  &lt 11 P
-&mt LEFT_GUI A    &kp S         &kp D         &lt 2 F             &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K         &kp L    &mt MINUS LEFT_GUI
+&mt LEFT_GUI A    &kp S         &kp D         &lt 2 F             &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K         &kp L    &mt LEFT_GUI MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &lt 15 COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                                &lt 7 ESCAPE
             >;
