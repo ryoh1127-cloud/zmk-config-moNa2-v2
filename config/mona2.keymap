@@ -85,6 +85,12 @@
             bindings = <&kp TAB>;
             key-positions = <19 18>;
         };
+
+        layer14 {
+            bindings = <&lt 14 LA(TAB)>;
+            key-positions = <8 9>;
+            layers = <1>;
+        };
     };
 
     macros {
