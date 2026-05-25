@@ -249,7 +249,7 @@
         default_layer_Win {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &kp I      &lt 10 O  &lt 12 P
-&mt LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L     &mt LEFT_GUI MINUS
+&mt LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L     &mt LEFT_ALT MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                              &lt 7 ESC
             >;
@@ -270,10 +270,10 @@
 
         layer_3 {
             bindings = <
-&kp PAGE_UP  &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp PG_UP        &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN
-&kp HOME     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp HOME         &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans       &trans    &trans        &trans           &kp A                                   &trans    &kp LS(PRINTSCREEN)      &copy_paste_Win  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &kp LA(F4)
-&trans       &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                             &kp LG(LS(S))
+&kp PAGE_UP    &trans    &kp UP_ARROW  &trans           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS                                          &kp LA(F4)       &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN
+&kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS            &kp LC(LG(PRINTSCREEN))  &kp HOME         &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&trans         &trans    &trans        &trans           &kp A                                   &trans    &kp LS(PRINTSCREEN)      &copy_paste_Win  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &kp LA(F4)
+&trans         &trans    &trans        &trans           &trans                                  &trans    &kp DEL                  &trans                                                             &kp LG(LS(S))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
