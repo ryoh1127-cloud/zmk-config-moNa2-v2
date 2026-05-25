@@ -92,11 +92,11 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
-  - TAB
+  - {t: ▽, type: trans}
   - Ctl+LEFT ARROW
   - UP ARROW
   - Ctl+RIGHT ARROW
-  - LEFT GUI
+  - Ctl+UP ARROW
   - PAGE DOWN
   - LEFT
   - DOWN
@@ -139,7 +139,7 @@ layers:
   - Ctl+Sft+TAB
   - UP ARROW
   - Ctl+TAB
-  - PAGE DOWN
+  - Gui+TAB
   - PAGE DOWN
   - LEFT
   - DOWN
@@ -705,3 +705,5 @@ combos:
 - p: [8, 9]
   k: {t: Alt+TAB, h: '14'}
   l: [default_layer_Win]
+- p: [30, 31]
+  k: Gui+SPACE
