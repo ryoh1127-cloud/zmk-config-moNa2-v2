@@ -568,8 +568,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -659,3 +659,6 @@ combos:
   l: [default]
 - p: [19, 18]
   k: TAB
+- p: [8, 9]
+  k: {t: Alt+TAB, h: '14'}
+  l: [default_layer_Win]
