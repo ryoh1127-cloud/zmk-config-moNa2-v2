@@ -88,7 +88,7 @@ layers:
   - {t: ESC, h: '7'}
   '2':
   - PAGE UP
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
@@ -96,8 +96,8 @@ layers:
   - Ctl+LEFT ARROW
   - UP ARROW
   - Ctl+RIGHT ARROW
-  - Ctl+UP ARROW
-  - PAGE DOWN
+  - '&missioncontrol'
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - {t: RIGHT ARROW, type: held}
@@ -131,7 +131,7 @@ layers:
   - Gui+Sft+4
   '3':
   - PAGE UP
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
@@ -139,8 +139,8 @@ layers:
   - Ctl+Sft+TAB
   - UP ARROW
   - Ctl+TAB
-  - Gui+TAB
-  - PAGE DOWN
+  - '&window_tab'
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - {t: RIGHT ARROW, type: held}
