@@ -503,7 +503,7 @@
     };
 };
 
-// L14用のパターン(ウィンドウ操作_win)※準備中
+// L14用のパターン(ウィンドウ操作_win)
 
 &zip_mouse_gesture_4 {
     enable-eager-mode;
@@ -515,28 +515,28 @@
 
     vdesk_prev_14 {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LC(LEFT)>;
+        bindings = <&kp LG(LC(LEFT))>;
     };
 
     vdesk_next_14 {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(RIGHT)>;
+        bindings = <&kp LG(LC(RIGHT))>;
     };
 
     view_window_14 {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LC(UP)>;
+        bindings = <&kp LG(TAB)>;
     };
 
     view_application_14 {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LC(DOWN)>;
+        bindings = <&kp LG(D)>;
     };
 };
 
 // L15用のパターン
 
-&zip_mouse_gesture_5 {
+&zip_mouse_gesture_5 { 
     enable-eager-mode;
     always-active;
     stroke-size = <5>;
@@ -577,21 +577,21 @@
 
     copy_16 {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(C)>;
+        bindings = <&kp LC(C)>;
     };
 
     paste_16 {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(V)>;
+        bindings = <&kp LC(V)>;
     };
 
     focus_url_16 {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LG(L)>;
+        bindings = <&kp LC(L)>;
     };
 
     search_16 {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(SPACE)>;
+        bindings = <&kp LGUI>;
     };
 };
