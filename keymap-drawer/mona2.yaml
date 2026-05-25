@@ -92,11 +92,11 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
-  - PG UP
+  - TAB
   - Ctl+LEFT ARROW
   - UP ARROW
   - Ctl+RIGHT ARROW
-  - PAGE DOWN
+  - LEFT GUI
   - PAGE DOWN
   - LEFT
   - DOWN
@@ -525,19 +525,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -660,7 +660,7 @@ combos:
 - p: [18, 19]
   k: '10'
   l: [default_layer_Win, '5']
-- p: [19, 20]
+- p: [8, 9]
   k: {t: Gui+TAB, h: Gesture_L3}
   l: [default]
 - p: [8, 7]
