@@ -107,25 +107,25 @@
 
         command_c {
             bindings = <&command_c>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
             layers = <2>;
         };
 
         command_v {
             bindings = <&command_v>;
-            key-positions = <30 31>;
+            key-positions = <18 19>;
             layers = <2>;
         };
 
         control_c {
             bindings = <&control_c>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
             layers = <3>;
         };
 
         control_v {
             bindings = <&control_v>;
-            key-positions = <31 30>;
+            key-positions = <18 19>;
             layers = <3>;
         };
 
