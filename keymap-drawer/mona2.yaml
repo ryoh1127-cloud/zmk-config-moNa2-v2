@@ -178,7 +178,7 @@ layers:
   - '!'
   - <
   - '>'
-  - ''
+  - _
   - ''
   - '['
   - ']'
@@ -711,15 +711,21 @@ combos:
 - p: [8, 7]
   k: LEFT GUI
   l: [default_layer_Win]
-- p: [16, 17]
+- p: [17, 18]
   k: '&command_c'
   l: ['2']
-- p: [17, 18]
+- p: [18, 19]
   k: '&command_v'
   l: ['2']
-- p: [16, 17]
+- p: [17, 18]
   k: '&control_c'
   l: ['2']
-- p: [17, 18]
+- p: [18, 19]
   k: '&control_v'
   l: ['2']
+- p: [21, 22]
+  k: Gui+Z
+  l: [default]
+- p: [21, 22]
+  k: Ctl+Z
+  l: [default_layer_Win]
