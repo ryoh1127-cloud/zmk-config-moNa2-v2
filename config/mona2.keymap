@@ -409,7 +409,7 @@
 
         layer_5 {
             bindings = <
-&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp LS(MINUS)     &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
+&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp LS(INT_RO)     &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
 &kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none   &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LS(0x89)
 &kp LSHIFT        &kp LEFT_BRACE  &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &kp LSHFT
 &trans            &trans          &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &trans
