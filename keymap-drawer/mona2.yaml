@@ -91,7 +91,7 @@ layers:
   - PAGE DOWN
   - UP ARROW
   - {t: ▽, type: trans}
-  - AC DESKTOP SHOW ALL WINDOWS
+  - Ctl+UP ARROW
   - Gui+W
   - Ctl+LEFT ARROW
   - UP ARROW
@@ -101,7 +101,7 @@ layers:
   - LEFT
   - DOWN
   - {t: RIGHT ARROW, type: held}
-  - AC DESKTOP SHOW ALL APPLICATIONS
+  - Ctl+DOWN ARROW
   - Ctl+Gui+PRINTSCREEN
   - Ctl+A
   - LEFT ARROW
@@ -134,7 +134,7 @@ layers:
   - PAGE DOWN
   - Gui+UP ARROW
   - {t: ▽, type: trans}
-  - AC DESKTOP SHOW ALL WINDOWS
+  - Gui+TAB
   - Alt+F4
   - Ctl+Sft+TAB
   - UP ARROW
@@ -144,7 +144,7 @@ layers:
   - Gui+Sft+LEFT
   - Gui+DOWN
   - {t: Gui+Sft+RIGHT ARROW, type: held}
-  - AC DESKTOP SHOW ALL APPLICATIONS
+  - Gui+D
   - Ctl+Gui+PRINTSCREEN
   - HOME
   - LEFT ARROW
