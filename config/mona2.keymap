@@ -120,13 +120,13 @@
         control_c {
             bindings = <&control_c>;
             key-positions = <18 19>;
-            layers = <2>;
+            layers = <3>;
         };
 
         control_v {
             bindings = <&control_v>;
             key-positions = <31 30>;
-            layers = <2>;
+            layers = <3>;
         };
 
         command_z {
