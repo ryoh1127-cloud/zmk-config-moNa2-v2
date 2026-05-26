@@ -695,7 +695,7 @@ combos:
   k: TAB
 - p: [2, 1]
   k: ESC
-- p: [22, 23]
+- p: [23, 24]
   k: F10
 - p: [8, 9]
   k: {t: Gui+TAB, h: Gesture_L3}
@@ -712,16 +712,16 @@ combos:
 - p: [8, 7]
   k: LEFT GUI
   l: [default_layer_Win]
-- p: [17, 18]
+- p: [18, 19]
   k: '&command_c'
   l: ['2']
-- p: [18, 19]
+- p: [30, 31]
   k: '&command_v'
   l: ['2']
-- p: [17, 18]
+- p: [18, 19]
   k: '&control_c'
   l: ['2']
-- p: [18, 19]
+- p: [31, 30]
   k: '&control_v'
   l: ['2']
 - p: [21, 22]
