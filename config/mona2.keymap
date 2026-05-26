@@ -332,7 +332,7 @@
             label = "CONTROL_V";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LC(V)>, <&kp LS(LC(V))>;
+            bindings = <&kp LC(V)>, <&kp LG(V)>;
         };
     };
 
