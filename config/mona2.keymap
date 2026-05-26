@@ -84,6 +84,7 @@
         Layer15 {
             bindings = <&kp TAB>;
             key-positions = <19 18>;
+            layers = <0 1>;
         };
 
         layer14 {
@@ -137,6 +138,18 @@
         control_z {
             bindings = <&kp LC(Z)>;
             key-positions = <21 22>;
+            layers = <1>;
+        };
+
+        command_y {
+            bindings = <&kp LG(Y)>;
+            key-positions = <22 23>;
+            layers = <0>;
+        };
+
+        control_y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <22 23>;
             layers = <1>;
         };
     };
