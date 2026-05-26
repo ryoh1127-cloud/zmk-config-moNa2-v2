@@ -103,11 +103,11 @@ layers:
   - {t: RIGHT ARROW, type: held}
   - Ctl+DOWN ARROW
   - Ctl+Gui+PRINTSCREEN
-  - Ctl+A
+  - Gui+LEFT ARROW
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - Ctl+E
+  - Gui+RIGHT ARROW
   - {t: Gui+Z, h: LSHFT}
   - Gui+Y
   - {t: ▽, type: trans}
