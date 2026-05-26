@@ -720,10 +720,10 @@ combos:
   l: ['2']
 - p: [18, 19]
   k: '&control_c'
-  l: ['2']
+  l: ['3']
 - p: [31, 30]
   k: '&control_v'
-  l: ['2']
+  l: ['3']
 - p: [21, 22]
   k: Gui+Z
   l: [default]
