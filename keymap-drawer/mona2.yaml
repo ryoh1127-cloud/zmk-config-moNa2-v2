@@ -92,7 +92,7 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
-  - {t: ▽, type: trans}
+  - Gui+W
   - Ctl+LEFT ARROW
   - UP ARROW
   - Ctl+RIGHT ARROW
@@ -108,8 +108,8 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - Ctl+E
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Gui+Z, h: LSHFT}
+  - Gui+Y
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -132,7 +132,7 @@ layers:
   '3':
   - PAGE UP
   - PAGE DOWN
-  - UP ARROW
+  - Gui+UP ARROW
   - {t: ▽, type: trans}
   - AC DESKTOP SHOW ALL WINDOWS
   - Alt+F4
@@ -141,9 +141,9 @@ layers:
   - Ctl+TAB
   - '&window_tab'
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - {t: RIGHT ARROW, type: held}
+  - Gui+Sft+LEFT
+  - Gui+DOWN
+  - {t: Gui+Sft+RIGHT ARROW, type: held}
   - AC DESKTOP SHOW ALL APPLICATIONS
   - Ctl+Gui+PRINTSCREEN
   - HOME
@@ -151,8 +151,8 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Ctl+Z, h: LSHFT}
+  - Ctl+Y
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - A
@@ -711,3 +711,15 @@ combos:
 - p: [8, 7]
   k: LEFT GUI
   l: [default_layer_Win]
+- p: [16, 17]
+  k: '&command_c'
+  l: ['2']
+- p: [17, 18]
+  k: '&command_v'
+  l: ['2']
+- p: [16, 17]
+  k: '&control_c'
+  l: ['2']
+- p: [17, 18]
+  k: '&control_v'
+  l: ['2']
