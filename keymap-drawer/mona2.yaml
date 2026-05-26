@@ -702,6 +702,7 @@ combos:
   l: [default]
 - p: [19, 18]
   k: TAB
+  l: [default, default_layer_Win]
 - p: [8, 9]
   k: {t: Alt+TAB, h: '14'}
   l: [default_layer_Win]
@@ -728,4 +729,10 @@ combos:
   l: [default]
 - p: [21, 22]
   k: Ctl+Z
+  l: [default_layer_Win]
+- p: [22, 23]
+  k: Gui+Y
+  l: [default]
+- p: [22, 23]
+  k: Ctl+Y
   l: [default_layer_Win]
