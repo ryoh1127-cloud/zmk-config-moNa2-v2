@@ -3,6 +3,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
+#include <scroll-snap.dtsi>
 
 // =========================================================================
 // ★追加：加速度（アクセラレーション）のカーブ設定
@@ -135,6 +136,7 @@ gesture_l11 {
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
+            <&zip_scroll_snap>;
     };
 
 // レイヤー10のときにY軸反転スクロール(Windows用)
@@ -146,6 +148,7 @@ gesture_l11 {
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_scaler 1 16>;
+            <&zip_scroll_snap>;
     };
 };
 
