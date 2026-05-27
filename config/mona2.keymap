@@ -273,6 +273,8 @@
             label = "EISU_KANA";
             #binding-cells = <0>;
             bindings = <&lt 6 LANGUAGE_1>, <&kp LANGUAGE_2>;
+
+            tapping-term-ms = <180>;
         };
 
         copy_paste_Mac: copy_paste_Mac {
