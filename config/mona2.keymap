@@ -85,7 +85,7 @@
         Layer15 {
             bindings = <&kp TAB>;
             key-positions = <19 18>;
-            layers = <0 1>;
+            layers = <0 1 8>;
         };
 
         layer14 {
