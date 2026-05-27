@@ -113,12 +113,9 @@ gesture_l11 {
     };
 
 // 入力チェーンの先頭に &pointer_accel を追加
-    auto_mouse_layer {
-        layers = <0 1>;
     input-processors = <
         &pointer_accel
         &zip_temp_layer 8 10000>;
-};
 
     //input-processors = <&zip_temp_layer 8 10000>; //加速度追加のため無効
 
