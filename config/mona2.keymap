@@ -43,11 +43,12 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <250>;
 };
 
 &lt {
-    quick-tap-ms = <200>;
+    tapping-term-ms = <180>; /* タップ判定時間 */
+    quick-tap-ms = <200>; /* クイックタップ時間(連続タップ判定時間) */
     flavor = "balanced";
 };
 
