@@ -135,7 +135,7 @@ gesture_l11 {
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 16>;                           //スクロール量を1/4倍
+            <&zip_scroll_scaler 1 16>,                           //スクロール量を1/4倍
             <&zip_scroll_snap>;
     };
 
@@ -145,9 +145,9 @@ gesture_l11 {
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+            // <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_scroll_scaler 1 16>;
+            <&zip_scroll_scaler 1 16>,
             <&zip_scroll_snap>;
     };
 };
