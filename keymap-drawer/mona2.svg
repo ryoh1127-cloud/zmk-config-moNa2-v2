@@ -852,6 +852,10 @@ path.combo {
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <text x="616" y="84" class="combo tap"><tspan style="font-size: 70%">&amp;command_v</tspan></text>
 </g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap"><tspan style="font-size: 64%">&amp;missionco…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 840)" class="layer-3">
@@ -1085,6 +1089,10 @@ path.combo {
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <text x="616" y="84" class="combo tap"><tspan style="font-size: 70%">&amp;control_v</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap"><tspan style="font-size: 64%">&amp;window_tab</tspan></text>
 </g>
 </g>
 </g>
