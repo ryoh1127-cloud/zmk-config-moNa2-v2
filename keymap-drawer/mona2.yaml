@@ -92,7 +92,7 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - Ctl+UP ARROW
-  - Gui+W
+  - Gui+Q
   - Ctl+LEFT ARROW
   - UP ARROW
   - Ctl+RIGHT ARROW
@@ -136,9 +136,9 @@ layers:
   - {t: ▽, type: trans}
   - Gui+TAB
   - Alt+F4
-  - Ctl+Sft+TAB
+  - Ctl+Gui+LEFT ARROW
   - UP ARROW
-  - Ctl+TAB
+  - Ctl+Gui+RIGHT ARROW
   - '&window_tab'
   - {t: ▽, type: trans}
   - Gui+Sft+LEFT
