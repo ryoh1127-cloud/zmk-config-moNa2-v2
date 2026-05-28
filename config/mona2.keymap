@@ -316,7 +316,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MISSIONCONTROL";
             #binding-cells = <0>;
-            bindings = <&kp LC(UP_ARROW)>, <&kp LG(DOWN_ARROW)>;
+            bindings = <&kp LC(UP_ARROW)>, <&kp LC(DOWN_ARROW)>;
 
             tapping-term-ms = <250>;
         };
