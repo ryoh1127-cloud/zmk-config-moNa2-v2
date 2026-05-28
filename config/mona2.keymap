@@ -143,7 +143,7 @@
         };
 
         command_y {
-            bindings = <&kp LG(Y)>;
+            bindings = <&kp LG(LS(Z))>;
             key-positions = <22 23>;
             layers = <0>;
         };
@@ -392,7 +392,7 @@
             bindings = <
 &kp PAGE_UP      &kp PAGE_DOWN  &kp UP_ARROW  &trans           &kp LC(UP_ARROW)                                       &kp LG(W)           &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &missioncontrol
 &trans           &kp LEFT       &kp DOWN      &kp RIGHT_ARROW  &kp LC(DOWN_ARROW)            &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)
-&mt LSHFT LG(Z)  &kp LG(Y)      &trans        &trans           &trans              &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
+&mt LSHFT LG(Z)  &kp LG(LS(Z))  &trans        &trans           &trans              &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
 &trans           &trans         &trans        &trans           &trans              &trans    &kp DEL                  &trans                                                                       &kp LG(LS(NUMBER_4))
             >;
 
