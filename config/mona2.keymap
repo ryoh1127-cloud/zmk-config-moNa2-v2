@@ -361,6 +361,15 @@
             tapping-term-ms = <250>;
             bindings = <&kp LC(V)>, <&kp LG(V)>;
         };
+
+        scroll_up_down_win: scroll_up_down_win {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <20>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            label = "SCROLL_UP_DOWN_WIN";
+        };
     };
 
     keymap {
@@ -385,12 +394,12 @@
 &mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                              &lt 7 ESC
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down_win>;
         };
 
         layer_2 {
             bindings = <
-&kp PAGE_UP      &kp PAGE_DOWN  &kp UP_ARROW  &trans           &kp LC(UP_ARROW)                                       &kp LG(W)           &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &missioncontrol
+&kp PAGE_UP      &kp PAGE_DOWN  &kp UP_ARROW  &trans           &kp LC(UP_ARROW)                                       &kp LG(Q)           &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &missioncontrol
 &trans           &kp LEFT       &kp DOWN      &kp RIGHT_ARROW  &kp LC(DOWN_ARROW)            &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)
 &mt LSHFT LG(Z)  &kp LG(LS(Z))  &trans        &trans           &trans              &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &trans
 &trans           &trans         &trans        &trans           &trans              &trans    &kp DEL                  &trans                                                                       &kp LG(LS(NUMBER_4))
@@ -401,10 +410,10 @@
 
         layer_3 {
             bindings = <
-&kp PAGE_UP      &kp PAGE_DOWN     &kp LG(UP_ARROW)  &trans                   &kp LG(TAB)                                     &kp LA(F4)       &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &window_tab
-&trans           &kp LG(LS(LEFT))  &kp LG(DOWN)      &kp LG(LS(RIGHT_ARROW))  &kp LG(D)              &kp LC(LG(PRINTSCREEN))  &kp HOME         &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&mt LSHFT LC(Z)  &kp LC(Y)         &trans            &trans                   &kp A        &trans    &kp LS(PRINTSCREEN)      &copy_paste_Win  &kp LC(LS(TAB))  &kp LC(W)       &kp LC(TAB)      &kp LA(F4)
-&trans           &trans            &trans            &trans                   &trans       &trans    &kp DEL                  &trans                                                             &kp LG(LS(S))
+&kp PAGE_UP      &kp PAGE_DOWN     &kp LG(UP_ARROW)  &trans                   &kp LG(TAB)                                     &kp LA(F4)       &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &window_tab
+&trans           &kp LG(LS(LEFT))  &kp LG(DOWN)      &kp LG(LS(RIGHT_ARROW))  &kp LG(D)              &kp LC(LG(PRINTSCREEN))  &kp HOME         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&mt LSHFT LC(Z)  &kp LC(Y)         &trans            &trans                   &kp A        &trans    &kp LS(PRINTSCREEN)      &copy_paste_Win  &kp LC(LS(TAB))         &kp LC(W)       &kp LC(TAB)              &kp LA(F4)
+&trans           &trans            &trans            &trans                   &trans       &trans    &kp DEL                  &trans                                                                            &kp LG(LS(S))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
