@@ -421,10 +421,10 @@
 
         layer_4 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp UNDERSCORE  &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
-&kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                   &none   &kp SEMICOLON   &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp LSHIFT        &kp GRAVE          &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp COLON       &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt LSHFT C_VOLUME_DOWN
-&trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                 &kp C_VOLUME_UP
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                        &kp UNDERSCORE  &none     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp CARET      &kp TILDE                   &none       &kp SEMICOLON   &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp LSHIFT        &kp GRAVE          &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none       &kp COLON       &kp AMPS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt LSHFT C_VOLUME_DOWN
+&trans            &trans             &trans           &trans         &kp TAB           &trans    &kp DELETE  &trans                                                                 &kp C_VOLUME_UP
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
@@ -432,10 +432,10 @@
 
         layer_5 {
             bindings = <
-&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                    &kp LS(INT_RO)    &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
-&kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none   &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LS(0x89)
-&kp LSHIFT        &kp LEFT_BRACE  &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none   &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &mt LSHFT C_VOLUME_DOWN
-&trans            &trans          &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                &kp C_VOLUME_UP
+&kp AMPS          &kp AT_SIGN     &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN                        &kp LS(INT_RO)    &none      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PERCENT
+&kp LEFT_BRACKET  &kp HASH        &kp DOLLAR       &kp EQUAL      &kp PLUS                    &none       &kp SEMICOLON     &kp COLON  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LS(0x89)
+&kp LSHIFT        &kp LEFT_BRACE  &kp QUESTION     &kp SLASH      &kp BACKSLASH     &none     &none       &kp SINGLE_QUOTE  &kp CARET  &kp RIGHT_BRACE    &kp PIPE              &mt LSHFT C_VOLUME_DOWN
+&trans            &trans          &trans           &trans         &kp TAB           &trans    &kp DELETE  &trans                                                                &kp C_VOLUME_UP
             >;
 
             sensor-bindings = <&scroll_right_left>;
