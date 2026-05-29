@@ -405,7 +405,7 @@
 &trans           &trans         &trans        &trans           &trans              &trans    &kp DEL                  &trans                                                                       &kp LG(LS(NUMBER_4))
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
+            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
         layer_3 {
@@ -416,7 +416,7 @@
 &trans           &trans            &trans            &trans                   &trans       &trans    &kp DEL                  &trans                                                                            &kp LG(LS(S))
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
+            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
         layer_4 {
