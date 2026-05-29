@@ -427,7 +427,7 @@
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                 &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
         };
 
         layer_5 {
