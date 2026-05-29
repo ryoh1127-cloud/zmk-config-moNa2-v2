@@ -212,7 +212,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: TAB, type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - VOLUME UP
   '5':
