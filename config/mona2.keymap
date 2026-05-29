@@ -427,7 +427,7 @@
 &trans            &trans             &trans           &trans         &kp TAB           &trans    &trans  &trans                                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
+            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         layer_5 {
