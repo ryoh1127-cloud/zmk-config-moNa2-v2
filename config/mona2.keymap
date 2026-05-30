@@ -171,7 +171,7 @@
             key-positions = <30 31>;
         };
 
-        Buck {
+        Buck2 {
             bindings = <&mkp MB4>;
             key-positions = <29 30>;
         };
