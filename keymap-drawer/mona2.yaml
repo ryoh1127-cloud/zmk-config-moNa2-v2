@@ -742,3 +742,7 @@ combos:
 - p: [7, 8]
   k: '&window_tab'
   l: ['3']
+- p: [30, 31]
+  k: '&mkp MB4'
+- p: [29, 30]
+  k: '&mkp MB4'
