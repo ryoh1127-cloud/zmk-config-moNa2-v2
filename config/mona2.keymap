@@ -165,6 +165,16 @@
             key-positions = <7 8>;
             layers = <3>;
         };
+
+        buck {
+            bindings = <&mkp MB4>;
+            key-positions = <30 31>;
+        };
+
+        Buck {
+            bindings = <&mkp MB4>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
