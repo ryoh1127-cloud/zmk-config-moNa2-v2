@@ -98,9 +98,9 @@ layers:
   - Ctl+RIGHT ARROW
   - '&missioncontrol'
   - {t: ▽, type: trans}
-  - Ctl+Alt+LEFT ARROW
+  - '&Windowleft'
   - DOWN
-  - {t: Ctl+Alt+RIGHT ARROW, type: held}
+  - {t: '&Windowright', type: held}
   - Ctl+DOWN ARROW
   - Ctl+Gui+PRINTSCREEN
   - Gui+LEFT ARROW
