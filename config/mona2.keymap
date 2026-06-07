@@ -457,7 +457,7 @@
         layer_2 {
             bindings = <
 &kp PAGE_UP      &kp PAGE_DOWN  &WindowMaximize  &trans        &kp LC(UP_ARROW)                                       &kp LG(Q)           &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &missioncontrol
-&trans           &Windowleft    &kp LG(F3)       &Windowright  &kp LC(DOWN_ARROW)            &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)
+&trans           &Windowleft    &kp F11          &Windowright  &kp LC(DOWN_ARROW)            &kp LC(LG(PRINTSCREEN))  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)
 &mt LSHFT LG(Z)  &kp LG(LS(Z))  &trans           &trans        &kp LG(Q)           &trans    &kp LS(PRINTSCREEN)      &copy_paste_Mac     &kp LC(LS(TAB))     &kp LG(W)       &kp LC(TAB)          &kp LG(Q)
 &trans           &trans         &trans           &trans        &trans              &trans    &kp DEL                  &trans                                                                       &kp LG(LS(NUMBER_4))
             >;
