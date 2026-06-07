@@ -125,8 +125,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Gui+BACKSPACE
   - {t: ▽, type: trans}
-  - DEL
   - {t: ▽, type: trans}
   - Gui+Sft+4
   '3':
@@ -168,8 +168,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&alldelete'
   - {t: ▽, type: trans}
-  - DEL
   - {t: ▽, type: trans}
   - Gui+Sft+S
   '4':
@@ -746,5 +746,5 @@ combos:
   k: '&mkp MB4'
 - p: [29, 30]
   k: '&mkp MB4'
-- p: [38, 37]
+- p: [33, 34]
   k: '7'
