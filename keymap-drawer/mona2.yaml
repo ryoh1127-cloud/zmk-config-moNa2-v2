@@ -89,7 +89,7 @@ layers:
   '2':
   - PAGE UP
   - PAGE DOWN
-  - UP ARROW
+  - Ctl+Alt+ENTER
   - {t: ▽, type: trans}
   - Ctl+UP ARROW
   - Gui+Q
@@ -98,9 +98,9 @@ layers:
   - Ctl+RIGHT ARROW
   - '&missioncontrol'
   - {t: ▽, type: trans}
-  - LEFT
+  - Ctl+Alt+LEFT ARROW
   - DOWN
-  - {t: RIGHT ARROW, type: held}
+  - {t: Ctl+Alt+RIGHT ARROW, type: held}
   - Ctl+DOWN ARROW
   - Ctl+Gui+PRINTSCREEN
   - Gui+LEFT ARROW
@@ -206,11 +206,11 @@ layers:
   - '{'
   - '}'
   - {t: VOLUME DOWN, h: LSHFT}
+  - ESC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: TAB, type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - DELETE
   - {t: ▽, type: trans}
