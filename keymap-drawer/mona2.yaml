@@ -99,7 +99,7 @@ layers:
   - '&missioncontrol'
   - {t: ▽, type: trans}
   - '&Windowleft'
-  - Gui+F3
+  - F11
   - {t: '&Windowright', type: held}
   - Ctl+DOWN ARROW
   - Ctl+Gui+PRINTSCREEN
