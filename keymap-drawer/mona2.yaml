@@ -89,7 +89,7 @@ layers:
   '2':
   - PAGE UP
   - PAGE DOWN
-  - Ctl+Alt+ENTER
+  - '&WindowMaximize'
   - {t: ▽, type: trans}
   - Ctl+UP ARROW
   - Gui+Q
