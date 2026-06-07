@@ -128,7 +128,7 @@ gesture_l11 {
             <&zip_xy_scaler 1 4>;       // カーソル移動量を1/4倍（4倍遅く）にする
     };
 
-    scroller 
+    scroller {
         layers = <9>;
         input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
