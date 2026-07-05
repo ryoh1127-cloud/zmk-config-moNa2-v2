@@ -450,7 +450,8 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&kp TAB>;
- // 1つ目がホールド(Cmd)、2つ目が連打用(Tab)
+
+            // 1つ目がホールド(Cmd)、2つ目が連打用(Tab)
             // ignored-key-positions = <8>;     // 隣のキー（逆送り用）を指定。※環境に合わせて番号を調整してください
         };
 
@@ -460,6 +461,15 @@
             bindings = <&kp LALT>, <&kp TAB>;
 
             // ignored-key-positions = <8>;
+        };
+
+        mo_bsc_del: mo_bsc_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MO_BSC_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
     };
 
@@ -471,7 +481,7 @@
 &kp Q             &kp W         &kp E         &kp R               &kp T                                         &kp Y        &kp U  &lt 15 I   &lt 9 O  &lt 11 P
 &mt LEFT_GUI A    &kp S         &kp D         &lt 2 F             &kp G                      &kp SEMICOLON      &kp H        &kp J  &kp K      &kp L    &mt LEFT_GUI MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &lt 8 TAB     &kp DOUBLE_QUOTES  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &kp BACKSPACE      &lt 2 ENTER                             &lt 7 ESCAPE
+&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 4 SPACE  &eisu_kana    &mo_bsc_del        &lt 2 ENTER                             &lt 7 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -482,7 +492,7 @@
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                     &kp Y        &kp U  &lt 16 I   &lt 10 O  &lt 12 P
 &mt LCTRL A       &kp S         &kp D         &lt 3 F                 &kp G                      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L     &mt LEFT_ALT MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt 8 TAB     &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &kp BACKSPACE  &lt 3 ENTER                              &lt 7 ESC
+&mt LCTRL ESC     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG2  &lt 5 SPACE  &eisu_kana    &mo_bsc_del    &lt 3 ENTER                              &lt 7 ESC
             >;
 
             sensor-bindings = <&scroll_up_down_win>;
