@@ -16,6 +16,8 @@ manifest:
       url-base: https://github.com/oleksandrmaslov
     - name: kot149
       url-base: https://github.com/kot149
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -42,5 +44,8 @@ manifest:
     - name: zmk-scroll-snap
       remote: kot149
       revision: v1
+    - name: zmk-smart-toggle
+      remote: caksoylar
+      revision: main
   self:
     path: config
