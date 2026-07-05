@@ -40,7 +40,7 @@ layers:
   - {t: LANG2, h: LEFT GUI}
   - {t: SPACE, h: '4'}
   - '&eisu_kana'
-  - BACKSPACE
+  - {t: BACKSPACE, s: DELETE}
   - {t: ENTER, h: '2'}
   - {t: ESCAPE, h: '7'}
   default_layer_Win:
@@ -83,7 +83,7 @@ layers:
   - {t: LANG2, h: LEFT CONTROL}
   - {t: SPACE, h: '5'}
   - '&eisu_kana'
-  - BACKSPACE
+  - {t: BACKSPACE, s: DELETE}
   - {t: ENTER, h: '3'}
   - {t: ESC, h: '7'}
   '2':
