@@ -103,11 +103,11 @@ layers:
   - {t: '&Windowright', type: held}
   - Ctl+DOWN ARROW
   - Ctl+Gui+PRINTSCREEN
-  - Gui+LEFT ARROW
+  - {t: Gui+LEFT ARROW, h: Gui+Sft+LEFT ARROW}
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - Gui+RIGHT ARROW
+  - {t: Gui+RIGHT ARROW, h: Gui+Sft+RIGHT ARROW}
   - {t: Gui+Z, h: LSHFT}
   - Gui+Sft+Z
   - {t: ▽, type: trans}
@@ -117,7 +117,7 @@ layers:
   - Sft+PRINTSCREEN
   - '&copy_paste_Mac'
   - Ctl+Sft+TAB
-  - Gui+W
+  - {t: Gui+W, h: Gui+Q}
   - Ctl+TAB
   - Gui+Q
   - {t: ▽, type: trans}
@@ -146,11 +146,11 @@ layers:
   - {t: Gui+Sft+RIGHT ARROW, type: held}
   - Gui+D
   - Ctl+Gui+PRINTSCREEN
-  - HOME
+  - {t: HOME, h: Sft+HOME}
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - END
+  - {t: END, h: Sft+END}
   - {t: Ctl+Z, h: LSHFT}
   - Ctl+Y
   - {t: ▽, type: trans}
@@ -160,7 +160,7 @@ layers:
   - Sft+PRINTSCREEN
   - '&copy_paste_Win'
   - Ctl+Sft+TAB
-  - Ctl+W
+  - {t: Ctl+W, h: Alt+F4}
   - Ctl+TAB
   - Alt+F4
   - {t: ▽, type: trans}
