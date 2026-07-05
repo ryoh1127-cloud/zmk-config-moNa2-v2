@@ -96,7 +96,7 @@ layers:
   - Ctl+LEFT ARROW
   - UP ARROW
   - Ctl+RIGHT ARROW
-  - '&missioncontrol'
+  - '&mac_swapper'
   - {t: ▽, type: trans}
   - '&Windowleft'
   - F11
@@ -139,7 +139,7 @@ layers:
   - Ctl+Gui+LEFT ARROW
   - UP ARROW
   - Ctl+Gui+RIGHT ARROW
-  - '&window_tab'
+  - '&win_swapper'
   - {t: ▽, type: trans}
   - Gui+Sft+LEFT
   - Gui+DOWN
