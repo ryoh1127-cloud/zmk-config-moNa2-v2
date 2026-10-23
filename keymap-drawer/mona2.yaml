@@ -38,8 +38,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT GUI}
-  - {t: SPACE, h: '4'}
-  - '&eisu_kana'
+  - {t: SPACE, h: '6'}
+  - {t: LANGUAGE 1, h: '4'}
   - {t: BACKSPACE, s: DELETE}
   - {t: ENTER, h: '2'}
   - {t: ESCAPE, h: '7'}
@@ -81,8 +81,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT CONTROL}
-  - {t: SPACE, h: '5'}
-  - '&eisu_kana'
+  - {t: SPACE, h: '6'}
+  - {t: LANGUAGE 1, h: '5'}
   - {t: BACKSPACE, s: DELETE}
   - {t: ENTER, h: '3'}
   - {t: ESC, h: '7'}
@@ -124,8 +124,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Gui+BACKSPACE
+  - LANGUAGE 2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+Sft+4
@@ -167,8 +167,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&alldelete'
+  - LANGUAGE 2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+Sft+S
@@ -210,8 +210,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - DELETE
   - {t: ▽, type: trans}
   - VOLUME UP
@@ -253,8 +253,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -296,7 +296,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
